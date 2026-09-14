@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this repository or its research artifacts, please cite the relevant artifact and the repository."
+authors:
+  - family-names: "Homayoun"
+    given-names: "Saeid"
+    affiliation: "University of Gävle, Sweden"
+    orcid: "https://orcid.org/0000-0002-2536-0446"
+title: "AAA — Audit & Accounting AI Laboratory"
+version: 1.0.0
+date-released: 2026-09-14
+type: software
+repository-code: "https://github.com/Saehon/AAA"
+url: "https://github.com/Saehon/AAA"
+keywords:
+  - auditing
+  - accounting
+  - artificial intelligence
+  - multi-agent systems
+  - audit analytics
+  - BERT
+  - reproducible research
