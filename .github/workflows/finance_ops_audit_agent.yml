@@ -1,0 +1,32 @@
+name: Finance Ops Audit Agent Tests
+
+on:
+  push:
+    branches:
+      - main
+      - "feature/**"
+    paths:
+      - "finance_ops_audit_agent/**"
+      - ".github/workflows/finance_ops_audit_agent.yml"
+  pull_request:
+    paths:
+      - "finance_ops_audit_agent/**"
+      - ".github/workflows/finance_ops_audit_agent.yml"
+
+jobs:
+  deterministic-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r finance_ops_audit_agent/requirements.txt
+
+      - name: Run deterministic tests
+        run: pytest -q finance_ops_audit_agent/tests
