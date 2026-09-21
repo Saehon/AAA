@@ -6,7 +6,7 @@
 **Research hub:** [NAAIL OpenLab](https://github.com/Saehon/Saeid-Homayoun/tree/main/NAAIL-OpenLab)  
 **ORCID:** https://orcid.org/0000-0002-2536-0446
 
-> Independent research repository. It is not affiliated with, endorsed by, sponsored by, or certified by the PCAOB, OpenAI, Google, Microsoft, any audit firm, or any other referenced organization.
+> Independent research repository. It is not affiliated with, endorsed by, sponsored by, or certified by the PCAOB, OpenAI, Anthropic, Google, Microsoft, any audit firm, or any other referenced organization.
 
 ## Purpose
 
@@ -18,10 +18,12 @@ The repository is a **supporting laboratory within the NAAIL research portfolio*
 
 | Asset | Research use |
 |---|---|
+| [`frankenstein_claude/`](./frankenstein_claude/) | Claude-based evidence-governed multi-agent accounting, audit, assurance, ICFR, forensic, ESG, cost/FinOps and AI-governance orchestration |
+| [`finance_ops_audit_agent/`](./finance_ops_audit_agent/) | Finance & Operations Audit Agent: controls, forensic analytics, operations risk and evidence-grounded reporting |
 | [`PCAOB_AI_Inspector.ipynb`](./PCAOB_AI_Inspector.ipynb) | Experimental AI-assisted audit-inspection analytics |
 | [`C_TDABC_for_Multi_Agent_Audit_Systems.ipynb`](./C_TDABC_for_Multi_Agent_Audit_Systems.ipynb) | Time-driven activity-based costing and multi-agent audit-system research |
 | [`multi_agent_BERT_accounting_ai_LAB.ipynb`](./multi_agent_BERT_accounting_ai_LAB.ipynb) | Multi-agent BERT/NLP experimentation for accounting and audit tasks |
-| [`Copy_of_AI_Accounting_System.ipynb`](./Copy_of_AI_Accounting_System.ipynb) | Accounting-AI prototype experimentation |\n| [`finance_ops_audit_agent/`](./finance_ops_audit_agent/) | Finance & Operations Audit Agent: controls, forensic analytics, operations risk, evidence-grounded multi-agent reporting |
+| [`Copy_of_AI_Accounting_System.ipynb`](./Copy_of_AI_Accounting_System.ipynb) | Accounting-AI prototype experimentation |
 | [`data/`](./data/) | Research/synthetic data assets subject to their applicable rights |
 | [`notebooks/`](./notebooks/) | Supporting computational experiments |
 
