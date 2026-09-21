@@ -4,7 +4,8 @@ import asyncio
 import json
 from pathlib import Path
 
-from agents import Runner, function_tool
+from agents import Runner
+from agents.decorators import tool
 
 from .analytics import analyze_transactions
 from .governance import (
@@ -60,7 +61,7 @@ def resolve_domains(domains: list[str] | None) -> list[RiskDomain]:
     return [domain for domain in ALL_DOMAINS if domain in domains]
 
 
-@function_tool
+@tool
 def run_transaction_tests(csv_path: str) -> str:
     """Run deterministic finance and operations audit tests on a repo-local CSV file.
 
