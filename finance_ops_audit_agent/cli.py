@@ -36,7 +36,10 @@ async def _main() -> None:
     args = build_parser().parse_args()
 
     if args.deterministic_only or not os.getenv("OPENAI_API_KEY"):
-        print(result_as_json(args.csv))
+        csv_path = Path(args.csv)
+        if not csv_path.is_absolute():
+            csv_path = Path(__file__).resolve().parent / csv_path
+        print(result_as_json(csv_path))
         if not args.deterministic_only and not os.getenv("OPENAI_API_KEY"):
             print(
                 "\nOPENAI_API_KEY is not set, so only deterministic tests were run. "
