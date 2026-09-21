@@ -21,7 +21,7 @@ The repository is a **supporting laboratory within the NAAIL research portfolio*
 | [`PCAOB_AI_Inspector.ipynb`](./PCAOB_AI_Inspector.ipynb) | Experimental AI-assisted audit-inspection analytics |
 | [`C_TDABC_for_Multi_Agent_Audit_Systems.ipynb`](./C_TDABC_for_Multi_Agent_Audit_Systems.ipynb) | Time-driven activity-based costing and multi-agent audit-system research |
 | [`multi_agent_BERT_accounting_ai_LAB.ipynb`](./multi_agent_BERT_accounting_ai_LAB.ipynb) | Multi-agent BERT/NLP experimentation for accounting and audit tasks |
-| [`Copy_of_AI_Accounting_System.ipynb`](./Copy_of_AI_Accounting_System.ipynb) | Accounting-AI prototype experimentation |
+| [`Copy_of_AI_Accounting_System.ipynb`](./Copy_of_AI_Accounting_System.ipynb) | Accounting-AI prototype experimentation |\n| [`finance_ops_audit_agent/`](./finance_ops_audit_agent/) | Finance & Operations Audit Agent: controls, forensic analytics, operations risk, evidence-grounded multi-agent reporting |
 | [`data/`](./data/) | Research/synthetic data assets subject to their applicable rights |
 | [`notebooks/`](./notebooks/) | Supporting computational experiments |
 
