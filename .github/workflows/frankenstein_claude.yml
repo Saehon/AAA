@@ -1,0 +1,36 @@
+name: Frankenstein Claude Tests
+
+on:
+  push:
+    branches:
+      - main
+      - "feature/**"
+    paths:
+      - "frankenstein_claude/**"
+      - "finance_ops_audit_agent/**"
+      - ".github/workflows/frankenstein_claude.yml"
+  pull_request:
+    paths:
+      - "frankenstein_claude/**"
+      - "finance_ops_audit_agent/**"
+      - ".github/workflows/frankenstein_claude.yml"
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: ${{ github.workspace }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r frankenstein_claude/requirements.txt
+
+      - name: Run Frankenstein Claude offline tests
+        run: pytest -q frankenstein_claude/tests
