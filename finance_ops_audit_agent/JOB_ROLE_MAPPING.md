@@ -1,41 +1,54 @@
 # Mapping to the Finance & Operations Audit Leader Role
 
-This document shows how the prototype operationalizes major capabilities described in the OpenAI Finance & Operations Audit Leader posting.
+This document maps the FRANKENSTEIN Finance & Operations Audit System to capabilities described in the OpenAI Finance & Operations Audit Leader posting.
 
-| Role capability | Prototype implementation | Current maturity |
+| Role capability | FRANKENSTEIN implementation | Maturity |
 |---|---|---|
-| Lead risk-based finance/operations audits | Lead orchestrator + specialist agents | Prototype |
-| Financial reporting/accounting controls | Finance Controls Auditor + deterministic rules | Prototype |
-| Treasury/tax/revenue/procurement/payroll/FP&A coverage | Architecture supports specialist expansion | Roadmap |
-| Forensic accounting and investigations | Forensic Transaction Analyst | Prototype |
-| Transaction-population analytics | Full CSV population scan | Implemented |
-| Detect anomalies/control circumvention | Duplicate, SoD, approval, timing and amount rules | Implemented |
-| Use AI/automation/data analytics | OpenAI Agents SDK + deterministic analytics | Implemented |
-| Continuous monitoring | Same tests can be scheduled against new populations | Roadmap |
-| Data quality / lineage / governance | Explicit schema validation and file boundary; deeper lineage controls planned | Early prototype |
-| Executive/Board reporting | Structured report schema designed for concise escalation | Prototype |
-| Remediation and issue validation | Recommended-action field; lifecycle workflow planned | Roadmap |
-| Human judgment and independence | Human-review requirement and evidence-first boundaries | Implemented |
+| Lead risk-based finance/operations audits | Federated Audit Leader + deterministic evidence pipeline | Prototype |
+| Financial reporting/accounting controls | Finance Controls Auditor + ICFR Auditor | Prototype |
+| Treasury | Treasury & Liquidity Auditor | Specialist implemented; treasury-specific data adapter roadmap |
+| Revenue | Revenue & Commercial Accounting Auditor | Specialist implemented; contract/billing adapter roadmap |
+| Procurement / AP | Procurement & AP Auditor + duplicate/approval/SoD analytics | Prototype |
+| Payroll | Payroll & People-Cost Auditor with explicit abstention when evidence is absent | Specialist implemented; payroll adapter roadmap |
+| Tax | Tax Control Auditor with evidence-bounded conclusions | Specialist implemented; tax adapter roadmap |
+| FP&A | FP&A and Management Reporting Auditor | Prototype |
+| Forensic accounting / investigations | Forensic Transaction Analyst + anomaly rules | Prototype |
+| Transaction-population analytics | Full-population CSV analytics | Implemented |
+| Control circumvention / SoD | Same requester/approver + approval tests | Implemented |
+| AI, automation and data analytics | OpenAI Agents SDK + deterministic Python analytics | Implemented |
+| Data quality / lineage / governance | SHA-256 provenance, schema validation, AI & Data Governance Auditor | Implemented at prototype level |
+| Cross-functional risk | Domain-routed specialist architecture | Implemented |
+| Independent challenge | Evidence Challenger attempts falsification and narrows unsupported claims | Implemented |
+| Evidence traceability | Finding IDs, row-level evidence, source hash, control objectives | Implemented |
+| Executive / Board-oriented synthesis | Structured Audit Leader output | Prototype |
+| Continuous monitoring | Deterministic engine can be scheduled over new populations | Roadmap |
+| Remediation / issue validation | Priority actions + human-gated follow-up | Early prototype |
+| Human judgment / independence | Mandatory pending human gate | Implemented |
 
-## Demonstration scenario
+## Role-to-system logic
 
-A reviewer can run the included synthetic transaction population and observe:
+~~~text
+Transaction Evidence
+    ↓
+Deterministic Audit Tests
+    ↓
+Domain Specialists
+    ↓
+Independent Challenge / Falsification
+    ↓
+Cross-Domain Audit Leader Synthesis
+    ↓
+Qualified Human Decision
+~~~
 
-- a duplicate transaction identifier;
-- a missing approver;
-- a requester/approver segregation-of-duties conflict;
-- weekend and out-of-hours postings;
-- high-value outliers;
-- large round-value transactions.
+## Portfolio demonstration
 
-The deterministic layer produces traceable findings. The agentic layer then interprets those findings in finance, forensic, and operational contexts and produces a structured, human-review-required report.
+The included synthetic dataset demonstrates duplicate IDs, missing approvals, segregation-of-duties conflicts, unusual timing, high-value outliers, round-value screening, provenance hashing, cross-domain evidence routing, unsupported-evidence rejection, and human-gated reporting.
 
 ## Design principle
 
-> AI may accelerate risk identification, testing, synthesis, and reporting; it should not silently replace evidence, professional skepticism, independence, or accountable human judgment.
+> AI may accelerate risk identification, testing, synthesis, challenge and reporting; it should not silently replace evidence, professional skepticism, independence, or accountable human judgment.
 
-## Portfolio value
+## Professional positioning
 
-This prototype is intended to demonstrate the intersection of:
-
-**Accounting + Internal Audit + Forensic Accounting + Data Analytics + AI Agents + Governance + Human Decision Rights.**
+**Accounting + Internal Audit + Forensic Accounting + ICFR + Treasury + Revenue + Procurement + Payroll + Tax + FP&A + Data Analytics + AI Agents + AI Governance + Evidence Verification + Human Decision Rights.**
