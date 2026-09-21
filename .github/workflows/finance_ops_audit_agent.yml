@@ -1,0 +1,41 @@
+name: Finance Ops Audit Agent Tests
+
+on:
+  push:
+    branches:
+      - main
+      - "feature/**"
+    paths:
+      - "finance_ops_audit_agent/**"
+      - ".github/workflows/finance_ops_audit_agent.yml"
+  pull_request:
+    paths:
+      - "finance_ops_audit_agent/**"
+      - ".github/workflows/finance_ops_audit_agent.yml"
+
+jobs:
+  deterministic-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -r finance_ops_audit_agent/requirements.txt
+
+      - name: Compile full agent package
+        run: python -m compileall -q finance_ops_audit_agent
+
+      - name: Import orchestration stack
+        run: python -c "import finance_ops_audit_agent.agent; print('FRANKENSTEIN agent import OK')"
+
+      - name: Run deterministic CLI smoke test
+        run: python -m finance_ops_audit_agent.cli --deterministic-only > /tmp/frankenstein_report.json
+
+      - name: Run unit tests
+        run: python -m pytest -q finance_ops_audit_agent/tests
