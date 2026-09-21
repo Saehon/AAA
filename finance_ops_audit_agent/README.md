@@ -1,172 +1,172 @@
-# Finance & Operations Audit Agent
+# FRANKENSTEIN Finance & Operations Audit System
 
-A public research prototype for **AI-assisted internal audit, finance controls, forensic transaction analysis, operations risk, and evidence-based reporting**.
+A public research prototype for **AI-assisted internal audit, finance controls, forensic analytics, treasury, revenue, procurement/AP, payroll, tax, FP&A, ICFR, AI/data governance, operations risk, evidence challenge, and human-governed reporting**.
 
 This module was designed around the capabilities described in OpenAI's **Finance & Operations Audit Leader** role. It is an independent portfolio project and is **not affiliated with, endorsed by, or built for OpenAI**.
 
-## Why this prototype exists
+## What FRANKENSTEIN means
 
-Modern internal audit needs more than a chatbot. A credible system should combine:
+FRANKENSTEIN is the project codename for an audit system assembled from **replaceable specialist modules**. Deterministic tests create evidence, domain specialists interpret only relevant evidence, an independent challenger attacks unsupported conclusions, and a qualified human retains final decision rights.
 
-- deterministic transaction tests;
-- audit and accounting domain reasoning;
-- forensic anomaly interpretation;
-- operational-risk context;
-- traceable evidence;
-- explicit limitations;
-- human approval before material conclusions.
-
-This prototype therefore separates **reproducible testing** from **LLM synthesis**.
+See ARCHITECTURE.md.
 
 ## Architecture
 
-```mermaid
+~~~mermaid
 flowchart LR
-    A[Transaction population] --> B[Deterministic Audit Tests]
-    B --> C1[Finance Controls Agent]
-    B --> C2[Forensic Agent]
-    B --> C3[Operations Risk Agent]
-    C1 --> D[Audit Leader Orchestrator]
-    C2 --> D
-    C3 --> D
-    D --> E[Structured Evidence-Grounded Report]
-    E --> F{Human Review Gate}
-```
+    A[Transaction Population] --> B[Deterministic Tests + Provenance]
+    B --> C[11 Specialist Audit Agents]
+    C --> D[Independent Evidence Challenger]
+    D --> E[Audit Leader Synthesis]
+    E --> F{Human Approval Gate}
+~~~
 
-## Current capabilities
+### Specialist audit team
 
-| Audit need | Prototype capability |
+| Specialist | Focus |
 |---|---|
-| Risk-based audit testing | Population-level rule tests and risk scoring |
-| Financial controls | Missing approval, segregation-of-duties, duplicate-ID tests |
-| Forensic review | Amount anomalies, unusual timing, large round-value transactions |
-| Operations risk | Process and governance interpretation through specialist agent |
-| Data analytics | Full CSV population analysis instead of sample-only inspection |
-| Evidence traceability | Finding IDs, rule IDs, transaction IDs, row-level evidence |
-| AI-assisted reporting | Structured executive summary, key risks, actions, limitations |
-| Human accountability | Final schema requires a human-review flag |
+| Finance Controls Auditor | Authorization, accounting controls, classification, transaction integrity |
+| Forensic Transaction Analyst | Anomalies, duplicate processing, unusual timing, control circumvention indicators |
+| Treasury & Liquidity Auditor | Cash disbursements, high-value activity, liquidity and bank-control dependencies |
+| Revenue & Commercial Accounting Auditor | Validity, credits/reversals, cutoff and revenue evidence |
+| Procurement & Accounts Payable Auditor | P2P, vendor, approval, duplicate-payment and SoD risk |
+| Payroll & People-Cost Auditor | Payroll and people-cost controls; abstains when evidence is absent |
+| Tax Control Auditor | Tax-process implications and required corroborating evidence |
+| FP&A and Management Reporting Auditor | Budget attribution, unusual spend, variance and reporting quality |
+| ICFR Auditor | Financial-reporting control objectives and evidence sufficiency |
+| AI & Data Governance Auditor | Data quality, lineage, provenance, model-use boundaries |
+| Operations Risk Auditor | Resilience, accountability, scalability and third-party dependencies |
+
+## Why this architecture is stronger
+
+- **Deterministic evidence first:** transaction-level risk indicators originate in reproducible Python rules.
+- **SHA-256 provenance:** every run fingerprints the source dataset.
+- **Domain routing:** specialists receive findings relevant to their assigned domain.
+- **Adversarial challenge:** a separate agent tries to falsify or narrow specialist conclusions.
+- **Programmatic evidence validation:** unsupported finding IDs are removed after model output.
+- **Structured outputs:** specialist, challenge and executive outputs use Pydantic schemas.
+- **Fail-closed governance:** the final state is always pending_human_review.
+- **Replaceable modules:** individual audit specialists can be upgraded without redesigning the full system.
+
+## Deterministic analytics
+
+Current tests include:
+
+1. duplicate transaction identifiers;
+2. missing approval evidence;
+3. requester/approver segregation-of-duties conflicts;
+4. invalid timestamps;
+5. weekend postings;
+6. out-of-hours postings;
+7. robust amount outliers using median absolute deviation;
+8. large round-value transactions;
+9. missing account or cost-center coding;
+10. negative-value transactions requiring contextual review;
+11. repeated vendor/amount combinations on the same day;
+12. high-value transactions without approval evidence.
+
+These are **risk indicators**, not proof of error, fraud, misconduct, or control failure.
 
 ## Repository layout
 
-```text
+~~~text
 finance_ops_audit_agent/
 ├── README.md
+├── ARCHITECTURE.md
 ├── JOB_ROLE_MAPPING.md
-├── analytics.py
 ├── agent.py
-├── cli.py
+├── specialists.py
+├── analytics.py
+├── governance.py
+├── config.py
 ├── schemas.py
+├── cli.py
 ├── requirements.txt
 ├── .env.example
 ├── sample_data/
 │   └── transactions.csv
 └── tests/
-    └── test_analytics.py
-```
+    ├── test_analytics.py
+    └── test_governance.py
+~~~
 
 ## Quick start
 
-From the repository root:
-
-```bash
+~~~bash
 python -m venv .venv
-source .venv/bin/activate        # Windows: .venv\Scripts\activate
+source .venv/bin/activate
 pip install -r finance_ops_audit_agent/requirements.txt
-```
+~~~
 
-Run the transparent tests without any model/API call:
+### Deterministic-only mode
 
-```bash
+~~~bash
 python -m finance_ops_audit_agent.cli --deterministic-only
-```
+~~~
 
-Run the multi-agent workflow:
+### Full FRANKENSTEIN audit
 
-```bash
+~~~bash
 export OPENAI_API_KEY="YOUR_KEY"
+
 python -m finance_ops_audit_agent.cli \
   --csv sample_data/transactions.csv \
-  --objective "Assess transaction-control risk and identify evidence requiring follow-up."
-```
+  --domains all \
+  --objective "Assess transaction-control risk, cross-functional implications, and evidence requiring follow-up."
+~~~
 
-The model can be changed with:
+### Targeted audit
 
-```bash
-export OPENAI_MODEL="gpt-5.6-sol"
-```
+~~~bash
+python -m finance_ops_audit_agent.cli \
+  --csv sample_data/transactions.csv \
+  --domains finance_controls,forensic,treasury,icfr \
+  --objective "Review payment, control, forensic and financial-reporting risks."
+~~~
 
-## Deterministic control and forensic tests
+## Configurable thresholds
 
-The current prototype checks for:
+~~~text
+AUDIT_APPROVAL_THRESHOLD=10000
+AUDIT_LARGE_ROUND_THRESHOLD=10000
+AUDIT_MAD_MULTIPLIER=6
+AUDIT_WORKING_HOUR_START=6
+AUDIT_WORKING_HOUR_END=22
+~~~
 
-1. duplicate transaction identifiers;
-2. missing approvers;
-3. requester/approver segregation-of-duties conflicts;
-4. weekend postings;
-5. out-of-hours postings;
-6. robust amount outliers using median absolute deviation;
-7. large round-value transactions.
+They are research defaults and must be calibrated to entity-specific materiality and process design before professional use.
 
-These are **risk indicators**, not proof of fraud, error, or control failure.
+## Governance contract
 
-## Agent design
-
-### Finance Controls Auditor
-Focuses on authorization, segregation of duties, transaction integrity, accounting-process risk, and evidence sufficiency.
-
-### Forensic Transaction Analyst
-Focuses on unusual transactions and fraud indicators while explicitly separating suspicion from proven misconduct.
-
-### Operations Risk Auditor
-Focuses on process resilience, governance, scalability, accountability, and what additional evidence is required.
-
-### Finance & Operations Audit Leader Agent
-Orchestrates the specialists and produces a structured report with:
-
-- executive summary;
-- scope;
-- key risks;
-- evidence references;
-- recommended actions;
-- limitations;
-- mandatory human-review indicator.
-
-## Safety and audit-governance boundaries
-
-The prototype intentionally does **not**:
+The system intentionally does **not**:
 
 - issue an audit opinion;
 - determine that fraud occurred;
-- accuse an employee, vendor, or counterparty of misconduct;
+- accuse a person or counterparty of misconduct;
+- classify an ICFR observation as a material weakness from transaction data alone;
 - claim regulatory compliance;
 - make autonomous accounting entries or control changes;
-- read files outside this module through its transaction-analysis tool.
+- read transaction files outside this module through its local audit tool.
 
-Any material conclusion requires corroborating evidence and qualified human review.
+Every material conclusion must pass:
 
-## How this can be extended
+**Deterministic Evidence → Specialist Review → Independent Challenge → Executive Synthesis → Human Approval Gate**
 
-A production-oriented research roadmap could add:
+## Extension roadmap
 
-- general-ledger, AP, AR, payroll, procurement, treasury, tax, and revenue adapters;
-- ERP/API ingestion;
-- continuous-control monitoring;
-- entity-specific materiality thresholds;
-- vendor-master and user-access analytics;
-- journal-entry models;
-- graph-based related-party and payment-flow analysis;
-- audit issue lifecycle and remediation validation;
-- data lineage, model-risk, access-governance, and AI-control testing;
-- board/audit-committee reporting;
-- evaluation sets for false positives, false negatives, calibration, and evidence completeness.
+The architecture is ready for general ledger, trial balance, AP, AR, payroll, treasury/bank, tax, procurement/vendor-master, revenue-contract, budget/forecast, ERP-workflow, identity/access, continuous-monitoring, remediation, graph analytics, and Board-reporting adapters.
 
 ## References
 
-- OpenAI Careers: Finance & Operations Audit Leader  
+- OpenAI Careers: Finance & Operations Audit Leader
   https://openai.com/careers/finance-and-operations-audit-leader-san-francisco/
-- OpenAI Agents SDK  
+- OpenAI Agents SDK
   https://openai.github.io/openai-agents-python/
+- OpenAI Agents SDK — Agents
+  https://openai.github.io/openai-agents-python/agents/
+- OpenAI Agents SDK — Guardrails
+  https://openai.github.io/openai-agents-python/guardrails/
 
 ## Status
 
-**Research prototype · portfolio demonstration · not production assurance software.**
+**Version 0.2.0 · research prototype · portfolio demonstration · not production assurance software.**
