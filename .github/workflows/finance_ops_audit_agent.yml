@@ -16,8 +16,6 @@ on:
 jobs:
   deterministic-tests:
     runs-on: ubuntu-latest
-    env:
-      PYTHONPATH: ${{ github.workspace }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,5 +28,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r finance_ops_audit_agent/requirements.txt
 
-      - name: Run deterministic tests
+      - name: Compile full agent package
+        run: python -m compileall -q finance_ops_audit_agent
+
+      - name: Import orchestration stack
+        run: python -c "import finance_ops_audit_agent.agent; print('FRANKENSTEIN agent import OK')"
+
+      - name: Run deterministic CLI smoke test
+        run: python -m finance_ops_audit_agent.cli --deterministic-only > /tmp/frankenstein_report.json
+
+      - name: Run unit tests
         run: pytest -q finance_ops_audit_agent/tests
