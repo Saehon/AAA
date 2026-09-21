@@ -8,7 +8,7 @@ This module was designed around the capabilities described in OpenAI's **Finance
 
 FRANKENSTEIN is the project codename for an audit system assembled from **replaceable specialist modules**. Deterministic tests create evidence, domain specialists interpret only relevant evidence, an independent challenger attacks unsupported conclusions, and a qualified human retains final decision rights.
 
-See ARCHITECTURE.md.
+See ARCHITECTURE.md and EVALUATION.md.
 
 ## Architecture
 
@@ -73,6 +73,7 @@ These are **risk indicators**, not proof of error, fraud, misconduct, or control
 finance_ops_audit_agent/
 ├── README.md
 ├── ARCHITECTURE.md
+├── EVALUATION.md
 ├── JOB_ROLE_MAPPING.md
 ├── agent.py
 ├── specialists.py
