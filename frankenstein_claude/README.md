@@ -102,3 +102,18 @@ The repository demonstrates a separation that is important in professional AI sy
 It combines accounting/audit domain knowledge with Python, deterministic testing, model orchestration, structured evidence, governance, and reproducible CI.
 
 See [ARCHITECTURE.md](./ARCHITECTURE.md) for the system map.
+
+
+## Platform foundation
+
+The prototype now includes the foundation for the broader **Frankenstein Claude accounting–audit–assurance platform**:
+
+- `platform_registry.py` — four canonical cores, specialist/governance agent society, and controlled workflow stages;
+- `evidence_passport.py` — stable evidence IDs, provenance, source references, content hashes, and non-overridable source evidence;
+- `engagement_workflow.py` — sequential engagement state machine that prevents governance-stage skipping and reserves approval for the Human Gate;
+- `PLATFORM_BLUEPRINT.md` — the full platform architecture and Revenue & Receivables MVP build sequence;
+- `tests/test_platform_foundation.py` — offline tests for evidence integrity and human-decision boundaries.
+
+The expanded flow is:
+
+**Source Evidence → Deterministic Tests → Evidence Passports → Specialist Analysis → Hypothesis Competition → Adversarial Challenge → Independent Verification → Frankenstein Claude Audit Leader → Documentation → Human Gate**
