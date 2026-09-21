@@ -1,3 +1,3 @@
-"""Finance & Operations Audit Agent research prototype."""
+"""FRANKENSTEIN Finance & Operations Audit System research prototype."""
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
