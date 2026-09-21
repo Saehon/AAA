@@ -38,4 +38,4 @@ jobs:
         run: python -m finance_ops_audit_agent.cli --deterministic-only > /tmp/frankenstein_report.json
 
       - name: Run unit tests
-        run: pytest -q finance_ops_audit_agent/tests
+        run: python -m pytest -q finance_ops_audit_agent/tests
