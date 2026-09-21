@@ -3,14 +3,15 @@ from __future__ import annotations
 import argparse
 import asyncio
 import os
+from pathlib import Path
 
+from .agent import ALL_DOMAINS, run_frankenstein_audit
 from .analytics import result_as_json
-from .agent import run_audit
 
 
 def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Evidence-grounded Finance & Operations Audit Agent prototype."
+        description="FRANKENSTEIN evidence-grounded Finance & Operations Audit System."
     )
     parser.add_argument(
         "--csv",
@@ -21,7 +22,7 @@ def build_parser() -> argparse.ArgumentParser:
         "--objective",
         default=(
             "Assess financial-process and operational risks, test key transaction controls, "
-            "identify forensic indicators, and recommend evidence-based follow-up."
+            "identify forensic indicators, challenge the evidence, and recommend prioritized follow-up."
         ),
     )
     parser.add_argument(
@@ -29,7 +30,21 @@ def build_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="Run transparent transaction tests only; no model/API call.",
     )
+    parser.add_argument(
+        "--domains",
+        default="all",
+        help=(
+            "Comma-separated specialist domains or 'all'. Valid values: "
+            + ", ".join(ALL_DOMAINS)
+        ),
+    )
     return parser
+
+
+def _parse_domains(value: str) -> list[str] | None:
+    if value.strip().lower() == "all":
+        return None
+    return [part.strip() for part in value.split(",") if part.strip()]
 
 
 async def _main() -> None:
@@ -43,11 +58,15 @@ async def _main() -> None:
         if not args.deterministic_only and not os.getenv("OPENAI_API_KEY"):
             print(
                 "\nOPENAI_API_KEY is not set, so only deterministic tests were run. "
-                "Set the key to enable multi-agent synthesis."
+                "Set the key to enable the full specialist + challenge + synthesis workflow."
             )
         return
 
-    report = await run_audit(args.objective, args.csv)
+    report = await run_frankenstein_audit(
+        objective=args.objective,
+        csv_path=args.csv,
+        domains=_parse_domains(args.domains),
+    )
     print(report.model_dump_json(indent=2))
 
 
