@@ -1,0 +1,293 @@
+{
+  "as_of": "2026-11-05",
+  "inclusion_period": "2022-01-01 to 2026-11-05",
+  "source_policy": "University-origin theses/dissertations are linked only. Dissertations are not journal Q1, FT50 or AJG ranked.",
+  "note": "Relevance to FDE is sometimes methodological rather than direct accounting application. No full theses or abstracts are copied into the repository.",
+  "theses": [
+    {
+      "id": "MIT26_DOWNING",
+      "institution": "Massachusetts Institute of Technology",
+      "author": "Charles Edwin Downing",
+      "year": 2026,
+      "title": "Data Integration and the Accounting Labor Market Effects of Generative AI",
+      "source_url": "https://dspace.mit.edu/entities/publication/bede92ff-fb82-4d93-854c-e9001539da5d",
+      "source_type": "university_thesis",
+      "degree": "doctoral_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "accounting data integration and AI adoption",
+      "project_use": "Source integration readiness; role changes and deployment context.",
+      "not_peer_reviewed_journal_article": true
+    },
+    {
+      "id": "MIT25_SOUTH",
+      "institution": "Massachusetts Institute of Technology",
+      "author": "Tobin South",
+      "year": 2025,
+      "title": "Private, Verifiable, and Auditable AI Systems",
+      "source_url": "https://dspace.mit.edu/entities/publication/90ed23b4-1258-4123-bb7f-ed9ad5099a4d",
+      "source_type": "university_thesis",
+      "degree": "doctoral_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "verifiable AI, secure agents",
+      "project_use": "Privacy-preserving evidence verification and authorization.",
+      "not_peer_reviewed_journal_article": true
+    },
+    {
+      "id": "MIT25_SERT",
+      "institution": "Massachusetts Institute of Technology",
+      "author": "Deniz Bilge Sert",
+      "year": 2025,
+      "title": "Mitigating LLM Hallucination in the Banking Domain",
+      "source_url": "https://dspace.mit.edu/entities/publication/63befa34-9d5d-437c-b7a3-cbfb85ec82ba",
+      "source_type": "university_thesis",
+      "degree": "master_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "banking hallucination controls",
+      "project_use": "Unsupported-assertion evaluation for regulated finance.",
+      "not_peer_reviewed_journal_article": true
+    },
+    {
+      "id": "MIT25_LI",
+      "institution": "Massachusetts Institute of Technology",
+      "author": "Angela Li",
+      "year": 2025,
+      "title": "Efficient Uncertainty Quantification of Large Language Models",
+      "source_url": "https://dspace.mit.edu/entities/publication/90203206-ee4f-46ae-aa6e-6fb55ffb6a34",
+      "source_type": "university_thesis",
+      "degree": "master_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "uncertainty quantification",
+      "project_use": "Abstention and calibration test plan.",
+      "not_peer_reviewed_journal_article": true
+    },
+    {
+      "id": "MIT24_ZHAO",
+      "institution": "Massachusetts Institute of Technology",
+      "author": "Zijie Zhao",
+      "year": 2024,
+      "title": "Next-Generation Intelligent Portfolio Management",
+      "source_url": "https://dspace.mit.edu/entities/publication/cb229dba-659b-4733-b7d7-ab47d2cbd50d",
+      "source_type": "university_thesis",
+      "degree": "doctoral_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "NLP/RAG/DRL for finance",
+      "project_use": "Economic loss, drawdown and interpretable risk-aware evaluation.",
+      "not_peer_reviewed_journal_article": true
+    },
+    {
+      "id": "MIT24_DAQQAH",
+      "institution": "Massachusetts Institute of Technology",
+      "author": "Bilal H. Daqqah",
+      "year": 2024,
+      "title": "Leveraging Large Language Models (LLMs) for Automated Extraction and Processing of Complex Ordering Forms",
+      "source_url": "https://dspace.mit.edu/entities/publication/cff8b769-f748-442f-9c0b-81094ce371b2",
+      "source_type": "university_thesis",
+      "degree": "master_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "enterprise document extraction",
+      "project_use": "Test invoice and purchase order extraction with document-level ground truth.",
+      "not_peer_reviewed_journal_article": true
+    },
+    {
+      "id": "HARVARD26_LONG",
+      "institution": "Harvard University",
+      "author": "Xuan Long",
+      "year": 2026,
+      "title": "Trustworthy AI: Ensuring Reliability and Accountability from Models to Agents",
+      "source_url": "https://dash.harvard.edu/entities/publication/ac5054da-8033-4ca8-8b48-8d855e1d36a9",
+      "source_type": "university_thesis",
+      "degree": "doctoral_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "autonomous agent reliability and provenance",
+      "project_use": "Track risk from cascading agent decisions and costly tail events.",
+      "not_peer_reviewed_journal_article": true
+    },
+    {
+      "id": "HARVARD25_SHI",
+      "institution": "Harvard University",
+      "author": "Tianshuo Shi",
+      "year": 2025,
+      "title": "Essays on Financial Accounting, Entrepreneurship, and Innovation",
+      "source_url": "https://dash.harvard.edu/entities/publication/2b37e613-6141-425d-b50a-af6425ed2c4f",
+      "source_type": "university_thesis",
+      "degree": "doctoral_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "financial disclosure and information access",
+      "project_use": "Separate information availability from information quality and causal outcomes.",
+      "not_peer_reviewed_journal_article": true
+    },
+    {
+      "id": "HARVARD25_SARKAR",
+      "institution": "Harvard University",
+      "author": "Suproteem Kumar Sarkar",
+      "year": 2025,
+      "title": "Essays in Finance, Technology, and Behavior",
+      "source_url": "https://dash.harvard.edu/items/c49b41d7-0c8b-4a12-ae42-70526b05ac4e",
+      "source_type": "university_thesis",
+      "degree": "doctoral_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "look-ahead bias and financial language models",
+      "project_use": "Prevent future-information leakage in time-stamped financial studies.",
+      "not_peer_reviewed_journal_article": true
+    },
+    {
+      "id": "HARVARD23_SHAVIT",
+      "institution": "Harvard University",
+      "author": "Yonadav Goldwasser Shavit",
+      "year": 2023,
+      "title": "Structuring Incentives in the Development and Use of Artificial Intelligence",
+      "source_url": "https://dash.harvard.edu/entities/publication/7cffc9b8-22da-4f48-a229-8179d3fcb37b",
+      "source_type": "university_thesis",
+      "degree": "doctoral_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "auditability, AI verification incentives",
+      "project_use": "Independent checks on model claims and supply-chain provenance.",
+      "not_peer_reviewed_journal_article": true
+    },
+    {
+      "id": "STANFORD25_MARKZHAO",
+      "institution": "Stanford University",
+      "author": "Mark Zhao",
+      "year": 2025,
+      "title": "Scalable, Efficient, and Secure Machine Learning Data Systems",
+      "source_url": "https://mast.stanford.edu/pubs/scalable_efficient_and_secure_machine_learning_data_systems/",
+      "source_type": "university_thesis",
+      "degree": "doctoral_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "secure ML data infrastructure",
+      "project_use": "Data-pipeline throughput, lineage, isolation and integrity controls.",
+      "not_peer_reviewed_journal_article": true
+    },
+    {
+      "id": "STANFORD25_MURTY",
+      "institution": "Stanford University",
+      "author": "Shikhar Murty",
+      "year": 2025,
+      "title": "Building the learning-from-interaction pipeline for large language models",
+      "source_url": "https://nlp.stanford.edu/~manning/dissertations/",
+      "source_type": "university_thesis",
+      "degree": "doctoral_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "learning from feedback",
+      "project_use": "Version feedback traces and control data leakage during iterative improvement.",
+      "not_peer_reviewed_journal_article": true
+    },
+    {
+      "id": "STANFORD24_MITCHELL",
+      "institution": "Stanford University",
+      "author": "Eric Mitchell",
+      "year": 2024,
+      "title": "From pre-trained language models to useful AI systems",
+      "source_url": "https://nlp.stanford.edu/~manning/dissertations/",
+      "source_type": "university_thesis",
+      "degree": "doctoral_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "reliable practical language model systems",
+      "project_use": "Measure task end-to-end success and unsupported assertions rather than language fluency.",
+      "not_peer_reviewed_journal_article": true
+    },
+    {
+      "id": "STANFORD24_CAO",
+      "institution": "Stanford University",
+      "author": "Hancheng Cao",
+      "year": 2024,
+      "title": "Evaluating and Designing Computing Systems for the Future of Work",
+      "source_url": "https://hci.cs.stanford.edu/research/",
+      "source_type": "university_thesis",
+      "degree": "doctoral_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "human-centered computing and future of work",
+      "project_use": "Study actual interaction and role changes for professional reviewers.",
+      "not_peer_reviewed_journal_article": true
+    },
+    {
+      "id": "STANFORD25_MOSS",
+      "institution": "Stanford University",
+      "author": "Robert J. Moss",
+      "year": 2025,
+      "title": "Safe planning under uncertainty using surrogate models",
+      "source_url": "https://purl.stanford.edu/zg643rb0595",
+      "source_type": "university_thesis",
+      "degree": "doctoral_thesis",
+      "access": "institutional_record_or_university_faculty_list; link-only, no file redistributed",
+      "journal_rankings": {
+        "ft50": null,
+        "ajg": null,
+        "q1": null
+      },
+      "relevance": "safe planning under uncertainty",
+      "project_use": "Stress-test decision gates on tail scenarios and model misspecification.",
+      "not_peer_reviewed_journal_article": true
+    }
+  ]
+}

@@ -1,0 +1,407 @@
+{
+  "as_of": "2026-11-05",
+  "method": "Select project-relevant articles within 2022–2026; rankings are venue memberships in named year, not paper performance.",
+  "ranking_provenance": {
+    "ft50": "https://www.ft.com/content/db863a0a-6524-45f9-bc52-fee997634bdc",
+    "ajg_2024": "https://journalindexes.com/ajg/accounting/",
+    "q1_2025": "https://journalindexes.com/ajg/accounting/"
+  },
+  "articles": [
+    {
+      "id": "JAR26_CHOI",
+      "authors": "Choi, Jung Ho; Xie, Chloe L.",
+      "title": "Human + AI in Accounting: Early Evidence from the Field",
+      "year": 2026,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "Journal of Accounting Research",
+      "doi": "10.1111/1475-679x.70052",
+      "primary_url": "https://doi.org/10.1111/1475-679x.70052",
+      "rankings": {
+        "ft50_2026": true,
+        "ajg_2024": "4*",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "accounting",
+        "human_ai"
+      ],
+      "project_use": "Measure accountant overrides and error propagation, with professionally adjudicated task labels.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "JAR26_BLANKESPOOR",
+      "authors": "Blankespoor, Elizabeth; deHaan, Ed; Li, Qianqian",
+      "title": "Generative AI in Financial Reporting",
+      "year": 2026,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "Journal of Accounting Research",
+      "doi": "10.1111/1475-679x.70050",
+      "primary_url": "https://doi.org/10.1111/1475-679x.70050",
+      "rankings": {
+        "ft50_2026": true,
+        "ajg_2024": "4*",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "accounting",
+        "disclosure"
+      ],
+      "project_use": "Separate machine-produced disclosure text from verified accounting assertions and cited sources.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "JAR22_COMMERFORD",
+      "authors": "Commerford, Benjamin P.; Dennis, Sean A.; Joe, Jennifer R.; Ulla, Jenny W.",
+      "title": "Man Versus Machine: Complex Estimates and Auditor Reliance on Artificial Intelligence",
+      "year": 2022,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "Journal of Accounting Research",
+      "doi": "10.1111/1475-679X.12407",
+      "primary_url": "https://doi.org/10.1111/1475-679X.12407",
+      "rankings": {
+        "ft50_2026": true,
+        "ajg_2024": "4*",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "audit",
+        "human_ai"
+      ],
+      "project_use": "Evaluate audit reliance and aversion under contradictory evidence, not only overall task speed.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "AOS24_MILLO",
+      "authors": "Millo, Yuval; Spence, Crawford; Xu, Ruiming",
+      "title": "Algorithmic self-referentiality: How machine learning pushes calculative practices to assess themselves",
+      "year": 2024,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "Accounting, Organizations and Society",
+      "doi": "10.1016/j.aos.2024.101567",
+      "primary_url": "https://doi.org/10.1016/j.aos.2024.101567",
+      "rankings": {
+        "ft50_2026": true,
+        "ajg_2024": "4*",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "governance",
+        "evaluation"
+      ],
+      "project_use": "Use independent outcome measures rather than self-referential model performance scores.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "JAE26_DEE",
+      "authors": "Dee, Carol C.; Luo, Bing; Wang, Elaine; Zhang, Jing",
+      "title": "Critical audit matters and internal control quality: The disciplining role of CAM reporting",
+      "year": 2026,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "Journal of Accounting and Economics",
+      "doi": "10.1016/j.jacceco.2025.101834",
+      "primary_url": "https://doi.org/10.1016/j.jacceco.2025.101834",
+      "rankings": {
+        "ft50_2026": true,
+        "ajg_2024": "4*",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "audit",
+        "icfr"
+      ],
+      "project_use": "Connect account-level exceptions to evidence, control ownership and remediation workflow.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "CAR24_LIBBY",
+      "authors": "Libby, Robert; Witz, Pamela D.",
+      "title": "Can artificial intelligence reduce the effect of independence conflicts on audit firm liability?",
+      "year": 2024,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "Contemporary Accounting Research",
+      "doi": "10.1111/1911-3846.12941",
+      "primary_url": "https://doi.org/10.1111/1911-3846.12941",
+      "rankings": {
+        "ft50_2026": true,
+        "ajg_2024": "4",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "audit",
+        "governance"
+      ],
+      "project_use": "Require identifiable reviewer responsibility and independence safeguards.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "RAST26_CICONTE",
+      "authors": "Ciconte, William A.; Rozario, Andrea M.; Urcan, Oktay",
+      "title": "Using AI to identify exogenous shocks and conduct archival accounting research",
+      "year": 2026,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "Review of Accounting Studies",
+      "doi": "10.1007/s11142-026-09967-y",
+      "primary_url": "https://doi.org/10.1007/s11142-026-09967-y",
+      "rankings": {
+        "ft50_2026": true,
+        "ajg_2024": "4",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "research",
+        "evaluation"
+      ],
+      "project_use": "Require citations verified against source material and independent falsification.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "JAR26_SHANTHIKUMAR",
+      "authors": "Shanthikumar, Devin; Yoo, Il Sun",
+      "title": "Beyond Automation: AI and the Human Value of Sell-Side Analysts",
+      "year": 2026,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "Journal of Accounting Research",
+      "doi": "10.1111/1475-679x.70083",
+      "primary_url": "https://doi.org/10.1111/1475-679x.70083",
+      "rankings": {
+        "ft50_2026": true,
+        "ajg_2024": "4*",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "finance",
+        "human_ai"
+      ],
+      "project_use": "Disaggregate information extraction speed from substantive analyst judgment.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "JFE24_CAO",
+      "authors": "Cao, Sean; Jiang, Wei; Wang, Junbo; Yang, Baozhong",
+      "title": "From Man vs. Machine to Man + Machine: The art and AI of stock analyses",
+      "year": 2024,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "Journal of Financial Economics",
+      "doi": "10.1016/j.jfineco.2024.103910",
+      "primary_url": "https://doi.org/10.1016/j.jfineco.2024.103910",
+      "rankings": {
+        "ft50_2026": true,
+        "ajg_2024": "4*",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "finance",
+        "human_ai"
+      ],
+      "project_use": "Compare human-only, machine-only and combined conditions including tail losses.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "RAST26_KRUPA",
+      "authors": "Krupa, T. J.; Mullaney, M. S.",
+      "title": "The use of artificial intelligence in decision-making: evidence from the effectiveness of corporate tax strategies",
+      "year": 2026,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "Review of Accounting Studies",
+      "doi": "10.1007/s11142-026-09940-9",
+      "primary_url": "https://doi.org/10.1007/s11142-026-09940-9",
+      "rankings": {
+        "ft50_2026": true,
+        "ajg_2024": "4",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "accounting",
+        "finance"
+      ],
+      "project_use": "Distinguish informative signals from professional advice; require verified tax-context conditions.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "MAR25_BOERNER",
+      "authors": "Boerner, X.; Wiener, M.; Guenther, T. W.",
+      "title": "Controllership effectiveness and digitalization: Shedding light on the importance of business analytics capabilities and the business partner role",
+      "year": 2025,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "Management Accounting Research",
+      "doi": "10.1016/j.mar.2024.100904",
+      "primary_url": "https://doi.org/10.1016/j.mar.2024.100904",
+      "rankings": {
+        "ft50_2026": false,
+        "ajg_2024": "3",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "management_accounting",
+        "finance"
+      ],
+      "project_use": "Measure controller adoption, interpretability and decisions rather than API latency alone.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "IJAIS25_KOKINA",
+      "authors": "Kokina, Julia; Blanchette, Shay; Davenport, Thomas H.; Pachamanova, Dessislava",
+      "title": "Challenges and opportunities for artificial intelligence in auditing: Evidence from the field",
+      "year": 2025,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "International Journal of Accounting Information Systems",
+      "doi": "10.1016/j.accinf.2025.100734",
+      "primary_url": "https://doi.org/10.1016/j.accinf.2025.100734",
+      "rankings": {
+        "ft50_2026": false,
+        "ajg_2024": "2",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "audit",
+        "governance"
+      ],
+      "project_use": "Threat-model hallucination, privacy, robustness and automation overreliance before field use.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "RFS25_MISSING",
+      "authors": "Bryzgalova, Svetlana; Lerner, Sven; Lettau, Martin; Pelger, Markus",
+      "title": "Missing Financial Data",
+      "year": 2025,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "Review of Financial Studies",
+      "doi": "10.1093/rfs/hhae036",
+      "primary_url": "https://doi.org/10.1093/rfs/hhae036",
+      "rankings": {
+        "ft50_2026": true,
+        "ajg_2024": "4*",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "finance",
+        "data_quality"
+      ],
+      "project_use": "Record missingness regimes and train/test leakage; compare imputation to complete-case outcomes.",
+      "replication_status": "Author-listed data/code pointers exist; confirm data license and exact match before executing.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "MNSC24_PRICING",
+      "authors": "Chen, Luyang; Pelger, Markus; Zhu, Jason",
+      "title": "Deep Learning in Asset Pricing",
+      "year": 2024,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "Management Science",
+      "doi": "10.1287/mnsc.2023.4695",
+      "primary_url": "https://doi.org/10.1287/mnsc.2023.4695",
+      "rankings": {
+        "ft50_2026": true,
+        "ajg_2024": "4*",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "finance",
+        "model_risk"
+      ],
+      "project_use": "Use economically constrained baselines and out-of-sample evaluation rather than unconstrained model scores.",
+      "replication_status": "Author-listed data/code pointers exist; confirm data license and exact match before executing.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "BAR26_MA",
+      "authors": "Abbas, Khalid",
+      "title": "Management accounting and artificial intelligence: A comprehensive literature review and recommendations for future research",
+      "year": 2026,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "British Accounting Review",
+      "doi": "10.1016/j.bar.2025.101551",
+      "primary_url": "https://doi.org/10.1016/j.bar.2025.101551",
+      "rankings": {
+        "ft50_2026": false,
+        "ajg_2024": null,
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "management_accounting",
+        "ai"
+      ],
+      "project_use": "Frame the role of organizational and business-process change in management accounting.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "BAR26_AUDIT",
+      "authors": "Du, Xingqiang; Zhang, Xinshu; Lai, Shaojuan",
+      "title": "ChatGPT accessibility and audit quality: Evidence from a quasi-natural experiment in China",
+      "year": 2026,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "British Accounting Review",
+      "doi": "10.1016/j.bar.2026.101950",
+      "primary_url": "https://doi.org/10.1016/j.bar.2026.101950",
+      "rankings": {
+        "ft50_2026": false,
+        "ajg_2024": null,
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "audit",
+        "research"
+      ],
+      "project_use": "Distinguish causal designs and proxy outcomes from independently observed audit decision accuracy.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "IJAIS25_AUDITABILITY",
+      "authors": "Li, Yueqi; Goel, Sanjay",
+      "title": "Artificial intelligence auditability and auditor readiness for auditing artificial intelligence systems",
+      "year": 2025,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "International Journal of Accounting Information Systems",
+      "doi": "10.1016/j.accinf.2025.100739",
+      "primary_url": "https://doi.org/10.1016/j.accinf.2025.100739",
+      "rankings": {
+        "ft50_2026": false,
+        "ajg_2024": "2",
+        "scimago_q1_2025": true
+      },
+      "domains": [
+        "audit",
+        "governance"
+      ],
+      "project_use": "Audit model inputs, data governance, logs, oversight roles and reviewer competence.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    },
+    {
+      "id": "IRFA25_CLIENTAI",
+      "authors": "Tan, Jianhua; Chang, Samuel; Zheng, Ying; Chan, Kam C.",
+      "title": "Effects of artificial intelligence in the modern business: Client artificial intelligence application and audit quality",
+      "year": 2025,
+      "source_type": "peer_reviewed_journal_article",
+      "journal": "International Review of Financial Analysis",
+      "doi": "10.1016/j.irfa.2025.104271",
+      "primary_url": "https://doi.org/10.1016/j.irfa.2025.104271",
+      "rankings": {
+        "ft50_2026": false,
+        "ajg_2024": null,
+        "scimago_q1_2025": null
+      },
+      "domains": [
+        "audit",
+        "governance"
+      ],
+      "project_use": "Treat associational audit-quality proxies separately from operational testing; ranking not verified for this entry.",
+      "replication_status": "Code/data availability not established by this register; check official publisher supplements.",
+      "verification_status": "publisher_or_institution_record_checked"
+    }
+  ]
+}

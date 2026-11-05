@@ -51,6 +51,26 @@ python -m research.synthetic_control_benchmark --cases 200 --seed 20261105
 
 Optional local container: `docker build -t fde-controls:demo .`, then `docker run --rm -p 127.0.0.1:8000:8000 fde-controls:demo`. Never bind demo routes to public internet ingress.
 
+## FT50, ABS/AJG, Q1, university theses and TLDR technology watch (2022–2026)
+
+This portfolio now has a **public, source-linked research layer** that keeps different evidence types separate and turns them into testable engineering requirements.
+
+- [FT50 / AJG 4*, 4, 3, 2 / Q1 literature and DOI map](docs/FT50_ABS_Q1_LITERATURE_2022_2026.md)
+- [Harvard, MIT and Stanford dissertations and theses](docs/HARVARD_MIT_STANFORD_THESES.md) — institutional links, no redistribution
+- [TLDR AI: recent engineering signals and project backlog](docs/TLDR_SIGNAL_TO_ENGINEERING.md) — editorials inform hypotheses, not peer-reviewed conclusions
+- [Research-to-engineering assurance gates](docs/EVIDENCE_TO_CONTROL_MATRIX.md)
+- [Public source, rights and reuse policy](docs/PUBLICATION_REUSE_POLICY.md)
+- Structured source registers: `research/academic_sources_2022_2026.json`, `research/university_theses_2022_2026.json`, `research/tldr_signals_2026.json`
+
+Review the curated source metadata using:
+
+```bash
+python -m research.evidence_triage --check
+python -m research.evidence_triage --feed tldr
+```
+
+This is an **offline, static source triage CLI**, not an official TLDR plugin or continuous-news monitor. Q1 is a **journal** classification, never a thesis classification. References inform reproducible hypotheses; they do not certify the present prototype or prove that future gates have been implemented.
+
 ## Engineering evidence
 
 - **Executable code:** `app/schemas.py`, `app/engine.py`, `app/main.py`, `app/llm.py`.

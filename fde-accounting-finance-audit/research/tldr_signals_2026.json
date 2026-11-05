@@ -1,0 +1,91 @@
+{
+  "as_of": "2026-11-05",
+  "feed": "https://ai.tldr.tech/",
+  "policy": "TLDR AI is a curated news discovery channel, not a scholarly database or verification source. Selected editorial signal summaries are transformed into project engineering hypotheses. No newsletter text is copied.",
+  "signals": [
+    {
+      "id": "TLDR26_DAYJOB",
+      "date": "2026-09-25",
+      "title": "Finance agents need end-to-end, rubric-based evaluation",
+      "source_url": "https://ai.tldr.tech/p/2026-09-25-tldr-ai",
+      "primary_url": "https://arxiv.org/abs/2610.01306",
+      "source_type": "news_signal",
+      "action": "Create financial work case sets with supporting files and expert pass/fail rubrics; do not equate benchmark success with audit competence.",
+      "editorial_vs_sponsor": "editorial_section; confirm cited primary publication independently",
+      "not_peer_reviewed": true,
+      "implementation_status": "proposed_not_yet_built"
+    },
+    {
+      "id": "TLDR26_PROMPT",
+      "date": "2026-09-08",
+      "title": "Prompt injection through tool output",
+      "source_url": "https://ai.tldr.tech/p/2026-09-08-tldr-ai",
+      "primary_url": null,
+      "source_type": "news_signal",
+      "action": "Test indirect prompt injection in document/tool output, enforce source/action boundaries and human approvals.",
+      "editorial_vs_sponsor": "editorial_section; confirm cited primary publication independently",
+      "not_peer_reviewed": true,
+      "implementation_status": "proposed_not_yet_built"
+    },
+    {
+      "id": "TLDR26_EVAL",
+      "date": "2026-10-29",
+      "title": "Independent model benchmarking dilemma",
+      "source_url": "https://ai.tldr.tech/p/2026-10-29-tldr-ai",
+      "primary_url": null,
+      "source_type": "news_signal",
+      "action": "Retain hidden gold sets and independent expert review; report version drift and leaderboard overfitting.",
+      "editorial_vs_sponsor": "editorial_section; confirm cited primary publication independently",
+      "not_peer_reviewed": true,
+      "implementation_status": "proposed_not_yet_built"
+    },
+    {
+      "id": "TLDR26_SECRETS",
+      "date": "2026-10-23",
+      "title": "Agent credentials and approval-based secret handling",
+      "source_url": "https://ai.tldr.tech/p/2026-10-23-tldr-ai",
+      "primary_url": null,
+      "source_type": "news_signal",
+      "action": "Use identity vault/short-lived credentials, never send raw secrets to language-model prompts.",
+      "editorial_vs_sponsor": "editorial_section; confirm cited primary publication independently",
+      "not_peer_reviewed": true,
+      "implementation_status": "proposed_not_yet_built"
+    },
+    {
+      "id": "TLDR26_TRACES",
+      "date": "2026-10-15",
+      "title": "Agent observability and evaluation traces",
+      "source_url": "https://ai.tldr.tech/p/2026-10-15-tldr-ai",
+      "primary_url": null,
+      "source_type": "news_signal",
+      "action": "Implement trace IDs, model version, tool call outcome, cost and reviewer approval lineage.",
+      "editorial_vs_sponsor": "editorial_section; confirm cited primary publication independently",
+      "not_peer_reviewed": true,
+      "implementation_status": "proposed_not_yet_built"
+    },
+    {
+      "id": "TLDR26_REWARD",
+      "date": "2026-06-26",
+      "title": "Reward hacking and evaluation shortcuts in coding agents",
+      "source_url": "https://signup.tldr.tech/ai/2026-06-26",
+      "primary_url": null,
+      "source_type": "news_signal",
+      "action": "Protect scoring scripts from being changed by the agent and store evaluation assets separately.",
+      "editorial_vs_sponsor": "editorial_section; confirm cited primary publication independently",
+      "not_peer_reviewed": true,
+      "implementation_status": "proposed_not_yet_built"
+    },
+    {
+      "id": "TLDR26_LONGJOB",
+      "date": "2026-09-14",
+      "title": "Real-world SWE tasks reveal gaps between agent benchmarks and enterprise work",
+      "source_url": "https://signup.tldr.tech/ai/2026-09-14",
+      "primary_url": null,
+      "source_type": "news_signal",
+      "action": "Test multi-step enterprise work rather than isolated individual API calls.",
+      "editorial_vs_sponsor": "editorial_section; confirm cited primary publication independently",
+      "not_peer_reviewed": true,
+      "implementation_status": "proposed_not_yet_built"
+    }
+  ]
+}
