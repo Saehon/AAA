@@ -1,0 +1,52 @@
+{
+  "currency": "USD",
+  "policy": {
+    "screening_materiality": "10000",
+    "period_end_window_days": 3,
+    "reconciliation_tolerance": "0.01"
+  },
+  "entries": [
+    {
+      "entry_id": "JE-100",
+      "posted_on": "2026-10-31",
+      "posted_by": "analyst",
+      "approved_by": "analyst",
+      "is_manual": true,
+      "reference": "INV-218",
+      "evidence_id": null,
+      "lines": [
+        {
+          "account": "Cash",
+          "debit": "12500",
+          "credit": "0"
+        },
+        {
+          "account": "Revenue",
+          "debit": "0",
+          "credit": "12400"
+        }
+      ]
+    },
+    {
+      "entry_id": "JE-101",
+      "posted_on": "2026-10-17",
+      "posted_by": "accountant",
+      "approved_by": "controller",
+      "is_manual": false,
+      "reference": "PAY-901",
+      "evidence_id": "DOC-901",
+      "lines": [
+        {
+          "account": "Accounts Payable",
+          "debit": "3000",
+          "credit": "0"
+        },
+        {
+          "account": "Cash",
+          "debit": "0",
+          "credit": "3000"
+        }
+      ]
+    }
+  ]
+}

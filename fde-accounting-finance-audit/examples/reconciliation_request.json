@@ -1,0 +1,27 @@
+{
+  "currency": "USD",
+  "bank": [
+    {
+      "transaction_id": "BANK-1",
+      "reference": "PAY-88",
+      "amount": "-500"
+    },
+    {
+      "transaction_id": "BANK-2",
+      "reference": "PAY-89",
+      "amount": "-200"
+    }
+  ],
+  "ledger": [
+    {
+      "transaction_id": "LEDGER-1",
+      "reference": "PAY-88",
+      "amount": "-500"
+    },
+    {
+      "transaction_id": "LEDGER-2",
+      "reference": "PAY-90",
+      "amount": "-200"
+    }
+  ]
+}

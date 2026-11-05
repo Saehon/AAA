@@ -1,0 +1,8 @@
+{
+  "currency": "USD",
+  "current_assets": "80000",
+  "current_liabilities": "110000",
+  "cash_balance": "18000",
+  "monthly_cash_burn": "9000",
+  "operating_cash_flow": "-5000"
+}
