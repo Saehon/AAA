@@ -14,6 +14,10 @@ AAA is an experimental laboratory for studying how AI can support accounting and
 
 The repository is a **supporting laboratory within the NAAIL research portfolio**. Stable flagship architectures and project-level documentation are maintained through NAAIL OpenLab; AAA is used for notebooks, prototypes, empirical experiments, and teaching/research demonstrations.
 
+## Public FDE engineering showcase
+
+**[Forward Deployed Engineering for Accounting, Finance & Audit](fde-accounting-finance-audit/README.md)** — runnable Python/FastAPI demonstration with journal-entry screening, bank/ledger matching, liquidity metrics, optional AI review drafting, synthetic fixtures, CI tests, and a research-to-engineering DOI map. The FDE sample is a **public prototype**, not a field-validated audit system or a real client deployment. Confidential research and unpublished manuscripts are excluded from this release.
+
 ## Current research assets
 
 | Asset | Research use |
