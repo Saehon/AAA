@@ -1,3 +1,11 @@
+# NAAIL Reporting Inspector
+
+**IFRS® & XBRL™ Financial Reporting Review — Research Preview**
+
+Formerly FinanceCheck AI — NAAIL. This 3.2.1 release changes the user-facing name, not the installed plugin's internal identifier or its existing capabilities. It is **not an IFRS taxonomy validator, ESEF conformance engine, audit service, or hosted SEC/IFRS MCP connection**. See [branding and scope](references/BRAND_IFRS_XBRL_SCOPE_V321.md) before public marketing.
+
+---
+
 # FinanceCheck AI — NAAIL V3.2.0
 
 **Status:** Private ChatGPT skills plugin; public-safe GitHub source; separate local SEC XBRL reference module **NOT connected to ChatGPT or Claude**.

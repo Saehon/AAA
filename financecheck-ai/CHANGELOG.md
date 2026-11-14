@@ -1,3 +1,8 @@
+## 3.2.1 — NAAIL Reporting Inspector naming and scope update
+- New display name **NAAIL Reporting Inspector**; descriptive IFRS® & XBRL™ subtitle.
+- Internal `financecheck-ai-naail` ID retained for backwards compatibility.
+- No claims of IFRS Foundation/XBRL International affiliation, certification, functioning IFRS taxonomy validation or hosted MCP service.
+
 # Change Log
 
 ## 3.2.0 — SEC XBRL evidence and scientific evaluation scaffolding (2026-11-14)
