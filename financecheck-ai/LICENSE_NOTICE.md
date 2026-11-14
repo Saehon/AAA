@@ -1,7 +1,9 @@
-# FinanceCheck AI — ownership and third-party rights notice
+# FinanceCheck AI — Public Source Scope and Rights
 
-Original source and instructional material developed for NAAIL FinanceCheck AI V2.1.0 are **review-only** pending the creator's determination of institutional, co-author, licensing and patent rights. No unrestricted open-source or commercial license is implied by public GitHub visibility.
+**GitHub distribution scope (v2.2.0):** The instructional skills, marketplace manifests and user-facing descriptions contained in this `financecheck-ai/` directory are made publicly available for viewing and integration testing. To the extent the repository owner is legally entitled to license these contributions, the repository's existing [Apache License 2.0](../LICENSE) applies to original material released here. The copyright and patent provisions of that license apply only to rights that the actual licensors have authority to grant.
 
-The repository contains no copied source code from Anthropic's Claude Finance / Financial Analysis or other competing plugins, no unlicensed professional standard texts, no proprietary vendor data, no personal banking records, no POMELO / VERA / KIWI patent specifications, and no confidential audit files.
+**Excluded:** The original private Python calculation engine and full test suite, confidential datasets, POMELO/VERA/KIWI enabling mechanisms, unpublished DARWIN research, client working papers and paid third-party source data are **not** in this public branch and are **not** licensed merely by this repository's public availability.
 
-Names and links to OpenAI, Anthropic, IFRS, PCAOB, audit firms and third-party data providers identify comparison targets, not affiliation, endorsement or certification. The owner should select an appropriate LICENSE and obtain legal/institutional approval before merging or listing a finished product.
+This release is educational and an **instructional plugin scaffold**, not certified financial analysis software, an audit opinion, an investment adviser or a production ERP integration. Neither OpenAI nor Anthropic has approved it for public marketplace listing. See `release-gates.md` before deploying.
+
+Project identity, employment/institutional rights, patent strategy, co-author ownership and third-party source licenses should be independently confirmed before adding further code or data. This notice cannot create rights the contributor does not possess.
