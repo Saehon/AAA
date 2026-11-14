@@ -1,3 +1,9 @@
+# FinanceCheck AI — NAAIL V3.1.0 (quality update)
+
+**Scope:** public/synthetic-only educational finance and accounting workflows, short-form finance learning, arithmetic from supplied inputs, and local STDIO MCP reference. No live filing retrieval, client or bank access, vendor-licensed data, financial advice or audit opinions.
+
+For the v3.1 quality patch, see `review/QUALITY_GATE_V31.md`, `references/QUALITY_CONTRACT_V31.md`, and `references/TOP_10_CHATGPT_COMPETITOR_QA_V31.json`.
+
 # FinanceCheck AI — NAAIL V3.0
 
 FinanceCheck makes finance accessible through short, accurate plain-language explanations, optional three-card stories, a voluntary one-question lesson, and existing synthetic/public accounting arithmetic exercises.

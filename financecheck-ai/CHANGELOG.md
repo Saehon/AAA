@@ -1,3 +1,12 @@
+# Changelog
+
+## V3.1.0 — Quality assurance patch
+- 10 relevant ChatGPT plugin benchmark specifications.
+- Comparable year-over-year period validation, safer input schemas and read-only MCP annotations.
+- Stronger evidence labels and concise story quality contract.
+- New regression tests for known reproduced defects and error cases.
+- No claims of live financial sources, external product tests or publication approval.
+
 # Release notes
 
 ## 3.0.0 — 14 November 2026

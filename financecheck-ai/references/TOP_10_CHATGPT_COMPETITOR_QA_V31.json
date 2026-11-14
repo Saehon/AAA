@@ -1,0 +1,66 @@
+{
+  "scope": "10 relevant published competitors by functional proximity; not ranking by downloads or performance",
+  "review_type": "public product descriptions only; no competitor internal testing",
+  "products": [
+    {
+      "name": "FinancialFilings",
+      "publicly_advertised": "Primary filings, normalized accounts",
+      "v31_qa_requirement": "Add authenticated source retrieval and period/units; unavailable now",
+      "url": "https://chatgpt.com/plugins/financialreports"
+    },
+    {
+      "name": "Fiscal.ai",
+      "publicly_advertised": "Source-linked financial metrics and KPI coverage",
+      "v31_qa_requirement": "Improve source trace and comparability",
+      "url": "https://chatgpt.com/plugins/fiscal-ai"
+    },
+    {
+      "name": "Financial Datasets",
+      "publicly_advertised": "Structured historical market/fundamental data",
+      "v31_qa_requirement": "Do not imply equivalent data access",
+      "url": "https://chatgpt.com/plugins/financial-datasets"
+    },
+    {
+      "name": "Quartr",
+      "publicly_advertised": "Company documents, events, call transcripts",
+      "v31_qa_requirement": "Compare numerical vs narrative claims when genuine sources exist",
+      "url": "https://chatgpt.com/plugins/quartr"
+    },
+    {
+      "name": "Bigdata.com",
+      "publicly_advertised": "Cited multi-source financial research",
+      "v31_qa_requirement": "Ground every material statement in inspected evidence",
+      "url": "https://chatgpt.com/plugins/plugin_asdk_app_69491eceef3c8191beb70788b7840429"
+    },
+    {
+      "name": "Intuit QuickBooks",
+      "publicly_advertised": "Business financial workflows and statements",
+      "v31_qa_requirement": "Strengthen practical small-business education, do not claim ERP access",
+      "url": "https://chatgpt.com/plugins/plugin_asdk_app_697aea3231288191b28a0061066e51bd"
+    },
+    {
+      "name": "Ramp",
+      "publicly_advertised": "Permission-based spending and employee finance tasks",
+      "v31_qa_requirement": "Explicitly gate data access and never imply transactions",
+      "url": "https://chatgpt.com/plugins/plugin_asdk_app_69250fb6281c819195b52a1556b0060c"
+    },
+    {
+      "name": "Alpha Vantage",
+      "publicly_advertised": "Market data and technical/financial indicators",
+      "v31_qa_requirement": "No price feeds; use clearly dated/supplied figures only",
+      "url": "https://chatgpt.com/plugins/plugin_asdk_app_6a5a6774ddc08191a0750a0dc4b10b97"
+    },
+    {
+      "name": "Wisesheets",
+      "publicly_advertised": "Company statements, ratios, DCF-ready figures",
+      "v31_qa_requirement": "Use consistent definitions and units",
+      "url": "https://chatgpt.com/plugins/plugin_asdk_app_6a8ddcaa875c8191b2eb11a823bbc4ee"
+    },
+    {
+      "name": "Data",
+      "publicly_advertised": "Validated analysis, reports, charts, dashboards",
+      "v31_qa_requirement": "Add inspectable analysis outputs and explicit execution records",
+      "url": "https://chatgpt.com/plugins/Plugin_fc9843a6fb34819195d6c7802398a8a7"
+    }
+  ]
+}

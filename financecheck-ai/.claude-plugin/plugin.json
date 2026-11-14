@@ -1,7 +1,7 @@
 {
   "name": "financecheck-ai-naail",
-  "description": "Plain-English public financial education and fictional accounting checks with evidence-first stories, safe calculations and optional micro-lessons; local MCP prototype is not deployed.",
-  "version": "3.0.0",
+  "description": "Source-labeled public/synthetic financial education; no hosted market data or authenticated source service.",
+  "version": "3.1.0",
   "author": {
     "name": "Saeid Homayoun"
   },

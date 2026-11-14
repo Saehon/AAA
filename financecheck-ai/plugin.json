@@ -1,35 +1,21 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "financecheck-ai-naail",
-  "version": "3.0.0",
-  "description": "Plain-English public financial education and fictional accounting checks with evidence-first stories, safe calculations and optional micro-lessons; local MCP prototype is not deployed.",
+  "version": "3.1.0",
+  "description": "Educational finance and accounting workflows with clear evidence labels, short lessons, privacy gates, and offline numerical checks. No live financial-data MCP connection.",
   "author": {
     "name": "Saeid Homayoun"
   },
   "keywords": [
-    "DCF",
-    "MCP reference",
-    "SQL read-only",
-    "accounting research",
-    "audit-support",
-    "close-management",
-    "descriptive statistics",
-    "ethical engagement",
-    "evidence cards",
-    "financial claim check",
     "financial literacy",
     "financial statements",
-    "financial-statements",
+    "accounting education",
+    "revenue growth",
+    "evidence status",
     "journal entries",
-    "microlearning",
-    "optional Kensho",
-    "privacy by design",
-    "public SEC reports",
-    "reconciliation",
-    "reviewer-engineer",
-    "source verification",
-    "sox-testing",
-    "variance analysis"
+    "variance analysis",
+    "synthetic examples",
+    "financial explanations"
   ],
   "repository": "https://github.com/Saehon/AAA",
   "extensions": {
@@ -37,19 +23,24 @@
       "interface": {
         "displayName": "FinanceCheck AI — NAAIL",
         "developerName": "Saeid Homayoun",
-        "category": "Productivity",
+        "category": "Finance",
         "capabilities": [
           "Read"
         ],
-        "shortDescription": "Understand public finance",
-        "longDescription": "Understand company finance in plain language, check arithmetic of public/synthetic figures and create source-labeled story cards and micro-lessons. Includes original finance/accounting skills and a separate local MCP reference implementation; does not include a connected live SEC, ERP, bank or market-data MCP server. It cannot independently certify public statements, audit SOX, offer investment advice or promise accuracy on uninspected sources. No confidential, personal or licensed-restricted uploads.",
+        "shortDescription": "Financial facts, made clear",
+        "longDescription": "FinanceCheck AI offers concise educational explanations of public financial statements, fictional accounting exercises and transparent three-card stories. It can guide arithmetic checks on supplied figures but cannot authenticate company filings, provide a live data service or act as an audit firm or investment adviser. The standalone MCP example is not connected. No private, personal or restricted licensed material.",
         "defaultPrompt": [
-          "Explain profit versus cash flow in 30 seconds with a fictional example.",
-          "Check this public company revenue claim and disclose which source you inspected.",
-          "Create three accurate, source-labeled story cards about revenue growth."
-        ]
+          "Explain profit versus cash flow using a fictional example.",
+          "Calculate growth from these synthetic revenues and show your work.",
+          "Make three source-labeled learning cards about revenue and cash flow."
+        ],
+        "websiteURL": "https://github.com/Saehon/AAA/tree/main/financecheck-ai",
+        "supportURL": "https://github.com/Saehon/AAA/issues"
       },
-      "onboardingSkill": "./skills/get-started/SKILL.md"
+      "onboardingSkill": "./skills/get-started/SKILL.md",
+      "publication": {
+        "release_notes": "V3.1 addresses comparator period and input-safety defects, adds read-only MCP schema annotations, and clarifies non-verification labels."
+      }
     }
   },
   "homepage": "https://github.com/Saehon/AAA/tree/main/financecheck-ai"
