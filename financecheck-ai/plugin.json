@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "financecheck-ai-naail",
-  "version": "3.8.0",
-  "description": "Financial Intelligence. Data-Driven Decisions. Finance and data analytics, IFRS/XBRL, audit/PCAOB, ISSB/ESRS, professional accounting and research workflows; advisory only.",
+  "version": "3.8.1",
+  "description": "Financial Intelligence. Data-Driven Decisions. IFRS/XBRL, ISSB, PCAOB, IIA/CIA/CPE, SOX 404, Big Four public audit guidance and advanced financial analytics; advisory only.",
   "author": {
     "name": "Saeid Homayoun"
   },
@@ -53,7 +53,13 @@
     "Hugging Face",
     "SSRN",
     "Co-Scientist-inspired",
-    "AlphaEvolve-inspired"
+    "AlphaEvolve-inspired",
+    "SOX 404",
+    "CPE",
+    "internal controls",
+    "fraud detection",
+    "ESG assurance",
+    "financial risk assessment"
   ],
   "repository": "https://github.com/Saehon/AAA",
   "extensions": {
@@ -66,7 +72,7 @@
           "Read"
         ],
         "shortDescription": "Financial Intelligence. Data-Driven Decisions.",
-        "longDescription": "Finance & Data Analytics AI: financial intelligence, data-driven decisions, financial reporting (IFRS/XBRL), audit (PCAOB), sustainability (ISSB/ESRS), professional accounting and evidence-based research. Educational and advisory tools; no professional endorsement, assurance opinion, live data access or verified research replication unless independently evidenced.",
+        "longDescription": "Finance & Data Analytics AI empowers CFOs, accountants, external and internal auditors, financial analysts, and researchers with AI-assisted financial analysis, IFRS and XBRL reporting, ISSB sustainability standards, PCAOB auditing standards, IIA Global Internal Audit Standards, SOX 404, CPA and CIA certification learning support, CPE professional education, public Big Four audit methodologies, ESG assurance, risk management, internal controls, fraud detection, and advanced data analytics. Educational and advisory support only. Not affiliated with, certified by, or endorsed by the IFRS Foundation, ISSB, PCAOB, IIA, CPA/CIA credential bodies, PwC, EY, KPMG, or Deloitte. No audit opinion or professional CPE credit awarded.",
         "defaultPrompt": [
           "Compare ACCA, AICPA CPA, IIA CIA, IMA CMA and ACFE CFE guidance for a fictional case, citing the actual official source.",
           "Compare public PwC, EY, KPMG and Deloitte IFRS guidance with the governing standard for the requested year.",
@@ -77,7 +83,7 @@
       },
       "onboardingSkill": "./skills/get-started/SKILL.md",
       "publication": {
-        "release_notes": "V3.8 adds offline SEC Company Facts annual revenue selection, explicit as-of date and provenance. Live SEC access not validated."
+        "release_notes": "V3.8.1 updates customer positioning, professional audiences and standards coverage. No new live integrations or endorsements."
       }
     }
   },
