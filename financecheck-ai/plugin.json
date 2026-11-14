@@ -1,12 +1,16 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "financecheck-ai-naail",
-  "version": "3.4.0",
-  "description": "IFRS/XBRL, ISSB/ESRS, PCAOB and professional accounting guidance with open research replication workflows; skills and offline research checkers only.",
+  "version": "3.5.0",
+  "description": "Financial Intelligence. Data-Driven Decisions. Finance and data analytics, IFRS/XBRL, audit/PCAOB, ISSB/ESRS, professional accounting and research workflows; advisory only.",
   "author": {
     "name": "Saeid Homayoun"
   },
   "keywords": [
+    "Finance & Data Analytics",
+    "Financial Intelligence",
+    "Data-Driven Decisions",
+    "financial data analytics",
     "IFRS financial reporting",
     "XBRL",
     "iXBRL",
@@ -55,14 +59,14 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "NAAIL Reporting Inspector",
+        "displayName": "Finance & Data Analytics AI",
         "developerName": "Saeid Homayoun",
         "category": "Finance",
         "capabilities": [
           "Read"
         ],
-        "shortDescription": "IFRS, audit, sustainability & research",
-        "longDescription": "Research and educational accounting, XBRL/ISSB/ESRS, PCAOB and professional-body guidance. Includes original skills and offline registry-based research and verification controls for public EDGAR, scholarly theses and open replication repositories; no live GitHub/Kaggle/HF/SSRN/SEC MCP, external Co-Scientist/AlphaEvolve access or licensed professional manuals are included. No professional certification, audit opinion or guaranteed replication result.",
+        "shortDescription": "Financial Intelligence. Data-Driven Decisions.",
+        "longDescription": "Finance & Data Analytics AI: financial intelligence, data-driven decisions, financial reporting (IFRS/XBRL), audit (PCAOB), sustainability (ISSB/ESRS), professional accounting and evidence-based research. Educational and advisory tools; no professional endorsement, assurance opinion, live data access or verified research replication unless independently evidenced.",
         "defaultPrompt": [
           "Compare ACCA, AICPA CPA, IIA CIA, IMA CMA and ACFE CFE guidance for a fictional case, citing the actual official source.",
           "Compare public PwC, EY, KPMG and Deloitte IFRS guidance with the governing standard for the requested year.",
