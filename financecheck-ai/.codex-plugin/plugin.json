@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "financecheck-ai-naail",
-  "version": "3.1.0",
-  "description": "Educational finance and accounting workflows with clear evidence labels, short lessons, privacy gates, and offline numerical checks. No live financial-data MCP connection.",
+  "version": "3.2.0",
+  "description": "Educational finance with source-graded SEC XBRL verification workflow, clear evidence caveats and deterministic accounting tests. Public filing retrieval is optional local backend only and not connected to ChatGPT.",
   "author": {
     "name": "Saeid Homayoun"
   },
@@ -19,7 +19,7 @@
     "privacy by design",
     "accounting research"
   ],
-  "repository": "https://github.com/Saehon/IFRS-AI-Inspector",
+  "repository": "https://github.com/Saehon/AAA",
   "interface": {
     "displayName": "FinanceCheck AI — NAAIL",
     "developerName": "Saeid Homayoun",
@@ -27,8 +27,8 @@
     "capabilities": [
       "Read"
     ],
-    "shortDescription": "Financial facts, made clear",
-    "longDescription": "Educational public/synthetic financial explanations and traceable arithmetic. No live filing or ERP retrieval, source authentication, assurance or investment advice.",
+    "shortDescription": "Understand finance and check sources",
+    "longDescription": "Public/synthetic financial education, evidence-grade instructions and deterministic local examples. Optional local SEC XBRL reference tool is NOT hosted or connected to ChatGPT; no audit or investment recommendations.",
     "defaultPrompt": [
       "Explain profit versus cash flow in 30 seconds with a fictional example.",
       "Check this public company revenue claim and disclose which source you inspected.",

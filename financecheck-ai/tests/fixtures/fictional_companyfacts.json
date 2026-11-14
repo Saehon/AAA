@@ -1,0 +1,19 @@
+{
+  "_fixture_notice": "COMPLETELY FABRICATED SEC-SHAPED TEST DATA. NOT A REAL SEC REPORT OR FILING.",
+  "cik": 1234567890,
+  "entityName": "Fictional Training Corporation",
+  "facts": {
+    "us-gaap": {
+      "RevenueFromContractWithCustomerExcludingAssessedTax": {
+        "label": "Revenue From Contract With Customer, Excluding Assessed Tax",
+        "units": {
+          "USD": [
+            {"start":"2024-01-01","end":"2024-12-31","val":100000000,"accn":"1234567890-25-000001","fy":2024,"fp":"FY","form":"10-K","filed":"2025-02-20","frame":"CY2024"},
+            {"start":"2025-01-01","end":"2025-12-31","val":120000000,"accn":"1234567890-26-000001","fy":2025,"fp":"FY","form":"10-K","filed":"2026-02-20","frame":"CY2025"},
+            {"start":"2025-01-01","end":"2025-03-31","val":20000000,"accn":"1234567890-25-000002","fy":2025,"fp":"Q1","form":"10-Q","filed":"2025-05-01","frame":"CY2025Q1"}
+          ]
+        }
+      }
+    }
+  }
+}

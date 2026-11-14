@@ -1,7 +1,7 @@
 {
   "name": "financecheck-ai-naail",
-  "description": "Source-labeled public/synthetic financial education; no hosted market data or authenticated source service.",
-  "version": "3.1.0",
+  "description": "Educational finance with source-graded SEC XBRL verification workflow, clear evidence caveats and deterministic accounting tests. Public filing retrieval is optional local backend only and not connected to ChatGPT.",
+  "version": "3.2.0",
   "author": {
     "name": "Saeid Homayoun"
   },

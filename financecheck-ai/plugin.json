@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "financecheck-ai-naail",
-  "version": "3.1.0",
-  "description": "Educational finance and accounting workflows with clear evidence labels, short lessons, privacy gates, and offline numerical checks. No live financial-data MCP connection.",
+  "version": "3.2.0",
+  "description": "Educational finance with source-graded SEC XBRL verification workflow, clear evidence caveats and deterministic accounting tests. Public filing retrieval is optional local backend only and not connected to ChatGPT.",
   "author": {
     "name": "Saeid Homayoun"
   },
@@ -27,19 +27,19 @@
         "capabilities": [
           "Read"
         ],
-        "shortDescription": "Financial facts, made clear",
-        "longDescription": "FinanceCheck AI offers concise educational explanations of public financial statements, fictional accounting exercises and transparent three-card stories. It can guide arithmetic checks on supplied figures but cannot authenticate company filings, provide a live data service or act as an audit firm or investment adviser. The standalone MCP example is not connected. No private, personal or restricted licensed material.",
+        "shortDescription": "Understand finance. Check the source.",
+        "longDescription": "Learn financial statements and accounting with transparent arithmetic, source-graded SEC XBRL workflow instructions, fictional examples and concise story cards. A local reference module can evaluate extracted SEC public facts when separately connected and explicitly enabled; this plugin has NO LIVE SEC/ERP/BANK/market-data connection and has NOT authenticated company reports here. No audit assurance, investment advice or confidential uploads.",
         "defaultPrompt": [
-          "Explain profit versus cash flow using a fictional example.",
-          "Calculate growth from these synthetic revenues and show your work.",
-          "Make three source-labeled learning cards about revenue and cash flow."
+          "Explain why profit differs from cash flow using fictional figures.",
+          "Help verify a public company annual revenue claim: distinguish inspected SEC facts from my submitted numbers.",
+          "Show a three-card explanation of revenue growth and what was not independently checked."
         ],
         "websiteURL": "https://github.com/Saehon/AAA/tree/main/financecheck-ai",
         "supportURL": "https://github.com/Saehon/AAA/issues"
       },
       "onboardingSkill": "./skills/get-started/SKILL.md",
       "publication": {
-        "release_notes": "V3.1 addresses comparator period and input-safety defects, adds read-only MCP schema annotations, and clarifies non-verification labels."
+        "release_notes": "V3.2 adds source-graded SEC XBRL review skills, a disabled-by-default local SEC reference tool, benchmark/evidence protocol and independent regression tests. No live MCP server is connected."
       }
     }
   },

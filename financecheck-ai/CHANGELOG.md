@@ -1,3 +1,12 @@
+# Change Log
+
+## 3.2.0 — SEC XBRL evidence and scientific evaluation scaffolding (2026-11-14)
+- Adds exactly one narrow SEC revenue year-over-year evidence workflow; local STDIO reference disabled by default for network access.
+- Adds structured source-evidence passport, filtering by original SEC extracted XBRL filing metadata and strict human review of restatements.
+- Introduces double-annotated future 200-case benchmark protocol and prospective 12-person financial comprehension pilot. **Neither human study has occurred.**
+- Adds offline SEC-shaped fixtures, mock HTTP response safety tests, source-provenance and scorer checks.
+- Does NOT add a production hosted MCP connection or public ChatGPT directory listing.
+
 # Changelog
 
 ## V3.1.0 — Quality assurance patch

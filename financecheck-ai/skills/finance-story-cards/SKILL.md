@@ -10,3 +10,6 @@ For every *published* financial card, preserve the company, accounting basis, cu
 Choose user-controlled 'save or share' only. Do not implement infinite scroll, dark patterns or nagging notifications. Check with the independent reviewer-engineer skill before marking publishable.
 
 **Quality criteria:** The first card is intelligible in one glance; the second shows a reproducible calculation or an explicit not-executed label; the third gives source and caveat. Do not claim a rendered image or share action unless a supported tool actually produced it.
+
+## V3.2 evidence passport display
+Where genuine extracted SEC XBRL is used, show the SEC API source category, accession and full-filing-not-inspected limitation. If competing restated values exist, start the first card with REVIEW NEEDED, not a growth claim. Synthetic fixtures cannot carry a link to fictional SEC archives. No shareable visual or social post should imply professional verification unless an authorized reviewer actually completed it.
