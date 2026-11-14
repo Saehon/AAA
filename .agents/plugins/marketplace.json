@@ -1,0 +1,20 @@
+{
+  "name": "naail-plugins",
+  "interface": {
+    "displayName": "NAAIL Experimental Plugins"
+  },
+  "plugins": [
+    {
+      "name": "financecheck-ai-naail",
+      "source": {
+        "source": "local",
+        "path": "./financecheck-ai"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

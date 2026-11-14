@@ -1,0 +1,15 @@
+{
+  "name": "financecheck-ai-naail",
+  "version": "2.2.0",
+  "description": "Public/synthetic-only finance and accounting education: claim verification, reconciliations, SOX draft workpapers, statements, variance, descriptive data checks, SQL syntax safety and educational valuation. Human approval required.",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "FinanceCheck AI — NAAIL",
+    "developerName": "Saeid Homayoun",
+    "capabilities": [
+      "Read"
+    ],
+    "category": "Productivity",
+    "shortDescription": "Understand and check public financial claims"
+  }
+}

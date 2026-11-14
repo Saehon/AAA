@@ -1,0 +1,13 @@
+{
+  "name": "naail-plugins",
+  "owner": {
+    "name": "Saeid Homayoun"
+  },
+  "plugins": [
+    {
+      "name": "financecheck-ai-naail",
+      "source": "./financecheck-ai",
+      "description": "Public-data finance evidence, accounting checks and educational valuation review"
+    }
+  ]
+}
