@@ -5,7 +5,7 @@ No external network, database, filesystem writes, or confidential input support.
 Requires no dependencies other than Python 3.11+.
 """
 from __future__ import annotations
-from decimal import Decimal, InvalidOperation
+from decimal import Decimal, InvalidOperation, localcontext
 import json
 import sys
 import re
@@ -15,6 +15,12 @@ NAME = "financecheck-reference"
 VERSION = "3.0.0"
 PROTOCOL_VERSION = "2025-06-18"
 MAX_MESSAGE_BYTES = 32768
+# Strictly bound fields; a local educational tool must not silently accept
+# unrelated sensitive payloads just because users classified the request public.
+INPUT_SAFETY_FLAGS = ('contains_personal_data','contains_confidential_data','licensed_restricted','private_repo','private_drive')
+CALC_FIELDS = frozenset(('classification','previous','current','period_previous','period_current','currency',*INPUT_SAFETY_FLAGS))
+EXPLAIN_FIELDS = frozenset(('classification','term',*INPUT_SAFETY_FLAGS))
+SUPPORTED_PERIOD_RE = re.compile(r'^(?:(?:FY)?(19\d\d|20\d\d))(?:-Q([1-4]))?$')
 
 TERMS = {
   "revenue": ("Money a business earned by selling goods or services during a period, before expenses.", "Revenue is not the same thing as net profit."),
@@ -35,32 +41,60 @@ def decimal_value(value:Any)->Decimal:
         raise ValueError("Numbers must be finite and within bounded demonstration range")
     return d
 
-def check_public_data(a:dict):
+def check_public_data(a:dict, expected_fields:frozenset[str]):
     if not isinstance(a,dict):
         raise ValueError("Tool arguments must be an object")
+    if len(json.dumps(a, ensure_ascii=False, default=str)) > MAX_MESSAGE_BYTES:
+        raise ValueError("BLOCKED: input exceeds local tool size limit")
+    unknown=set(a)-expected_fields
+    if unknown:
+        # Never echo the unknown key/value: it may contain personal information.
+        raise ValueError("BLOCKED: input contains unsupported fields; provide only documented public/synthetic fields")
     if a.get('classification') not in ('public','synthetic'):
         raise ValueError("BLOCKED: choose public or synthetic classification")
-    forbidden=('contains_personal_data','contains_confidential_data','licensed_restricted','private_repo','private_drive')
-    if any(a.get(x) for x in forbidden):
+    for field in INPUT_SAFETY_FLAGS:
+        if field in a and not isinstance(a[field],bool):
+            raise ValueError("BLOCKED: safety classification flags must be booleans")
+    if any(a.get(x) for x in INPUT_SAFETY_FLAGS):
         raise ValueError("BLOCKED: personal, confidential, private and restricted-licensed information not accepted")
+    # This is an input contract, not a personal-data detector or a filing authenticator.
+
+
+def annual_or_same_quarter_yoy(previous_period:str,current_period:str):
+    if previous_period == current_period:
+        raise ValueError('Two distinct reporting periods are required')
+    a=SUPPORTED_PERIOD_RE.fullmatch(previous_period)
+    b=SUPPORTED_PERIOD_RE.fullmatch(current_period)
+    if not a or not b:
+        raise ValueError('Two valid reporting periods are required (FY2024/FY2025 or 2024-Q1/2025-Q1)')
+    y0,q0=int(a.group(1)),a.group(2)
+    y1,q1=int(b.group(1)),b.group(2)
+    if y1 != y0+1 or q0 != q1:
+        raise ValueError('Year-over-year periods must be consecutive years and the same quarter/annual basis')
+
 
 def calculate(a:dict)->dict:
-    check_public_data(a)
+    check_public_data(a, CALC_FIELDS)
     for field in ('previous','current','period_previous','period_current','currency'):
         if not a.get(field) and a.get(field)!=0: raise ValueError(f"Missing required field: {field}")
     previous=decimal_value(a['previous']);current=decimal_value(a['current'])
     if previous<=0:raise ValueError("Previous revenue must be positive for comparable growth percentage")
+    if previous<Decimal('0.000000001'):raise ValueError("Previous revenue below supported precision")
     if current<0:raise ValueError("Revenue must be nonnegative")
     p0=str(a['period_previous']);p1=str(a['period_current'])
-    if p0==p1 or not all(re.fullmatch(r'(?:FY)?\d{4}(?:-Q[1-4])?', v) for v in (p0,p1)):
-        raise ValueError("Two distinct valid reporting periods are required, such as FY2025 or 2025-Q1")
+    annual_or_same_quarter_yoy(p0,p1)
     ccy=str(a['currency']).strip().upper()
-    if not 3<=len(ccy)<=4 or not ccy.isalpha():raise ValueError("Currency must be a short alphabetic code")
-    pct=(current-previous)/previous*100
-    def s(d):return format(d.quantize(Decimal('0.01')),'f')
+    if not re.fullmatch(r'[A-Z]{3}',ccy):
+        raise ValueError("Currency must be a three-letter code (format checked, ISO validity not authenticated)")
+    with localcontext() as ctx:
+        ctx.prec=60
+        pct=(current-previous)/previous*100
+        def s(d):return format(d.quantize(Decimal('0.01')),'f')
+        s_prev_diff=s(current-previous)
+        s_pct=s(pct)
     return {'status':'CALCULATED_FROM_SUBMITTED_INPUTS','source_status':'NOT_INDEPENDENTLY_INSPECTED',
-      'previous':str(previous),'current':str(current),'difference':s(current-previous),'percentage_change':s(pct),
-      'period_previous':p0,'period_current':p1,'currency':ccy,'classification':a['classification'],
+      'previous':str(previous),'current':str(current),'difference':s_prev_diff,'percentage_change':s_pct,
+      'period_previous':p0,'period_current':p1,'currency':ccy,'currency_code_status':'FORMAT_ONLY_NOT_AUTHENTICATED','classification':a['classification'],
       'caveat':'Accurate arithmetic on supplied numbers does not authenticate a filing, validate comparable accounting definitions, or imply investment advice.'}
 
 def story(a:dict)->dict:
@@ -81,18 +115,30 @@ def story(a:dict)->dict:
             'safe_caption':'Educational arithmetic. Figures are not independently verified. No investment recommendation.'}
 
 def explain(a:dict)->dict:
-    check_public_data(a)
+    check_public_data(a, EXPLAIN_FIELDS)
     term=str(a.get('term','')).strip().lower()
     if term not in TERMS:
         raise ValueError('Unsupported term. Choose: '+', '.join(sorted(TERMS)))
     definition,caution=TERMS[term]
     return {'term':term,'definition':definition,'caution':caution,'example_status':'GENERAL_EDUCATION','source_status':'NOT_A_COMPANY_FACT'}
 
+COMMON_SAFETY_PROPERTIES={x:{'type':'boolean','description':'If true, request is blocked; personal and restricted content is not supported.'} for x in INPUT_SAFETY_FLAGS}
+FINANCE_PROPERTIES={
+  'classification':{'type':'string','enum':['public','synthetic']},
+  'previous':{'type':['number','string'],'description':'Prior-year revenue from user-supplied figures, not authenticated'},
+  'current':{'type':['number','string'],'description':'Current-year revenue from user-supplied figures, not authenticated'},
+  'period_previous':{'type':'string','maxLength':12,'description':'Prior year: 2024, FY2024 or 2024-Q1'},
+  'period_current':{'type':'string','maxLength':12,'description':'Following comparable year, same annual/quarter format'},
+  'currency':{'type':'string','minLength':3,'maxLength':3,'description':'Three-letter currency code, format check only'},
+  **COMMON_SAFETY_PROPERTIES
+}
+READ_ONLY_ANNOTATIONS={'readOnlyHint':True,'destructiveHint':False,'openWorldHint':False}
 TOOLS=[
-{'name':'check_revenue_change','description':'Compute bounded year-over-year revenue arithmetic from public/synthetic caller-supplied figures; does NOT retrieve or authenticate corporate filings.','inputSchema':{'type':'object','properties':{'classification':{'type':'string','enum':['public','synthetic']},'previous':{'type':['number','string']},'current':{'type':['number','string']},'period_previous':{'type':'string'},'period_current':{'type':'string'},'currency':{'type':'string'}},'required':['classification','previous','current','period_previous','period_current','currency'],'additionalProperties':True}},
-{'name':'make_finance_story_card','description':'Create three transparent, short-form educational financial story cards from unverified supplied public/synthetic figures; always labels missing original-source authentication.','inputSchema':{'type':'object','properties':{'classification':{'type':'string','enum':['public','synthetic']},'previous':{'type':['number','string']},'current':{'type':['number','string']},'period_previous':{'type':'string'},'period_current':{'type':'string'},'currency':{'type':'string'}},'required':['classification','previous','current','period_previous','period_current','currency'],'additionalProperties':True}},
-{'name':'explain_finance_term','description':'Provide a short, original general explanation of selected finance terms, with a caution and no live company-data claim.','inputSchema':{'type':'object','properties':{'classification':{'type':'string','enum':['public','synthetic']},'term':{'type':'string'}},'required':['classification','term'],'additionalProperties':True}}
+ {'name':'check_revenue_change','description':'Calculate year-over-year revenue arithmetic from non-sensitive caller-supplied public/synthetic figures. NO filing lookup or verified company facts.','annotations':READ_ONLY_ANNOTATIONS,'inputSchema':{'type':'object','properties':FINANCE_PROPERTIES,'required':['classification','previous','current','period_previous','period_current','currency'],'additionalProperties':False}},
+ {'name':'make_finance_story_card','description':'Create 3 short factual/fictional cards based solely on non-sensitive submitted numbers; do not claim independent verification.','annotations':READ_ONLY_ANNOTATIONS,'inputSchema':{'type':'object','properties':FINANCE_PROPERTIES,'required':['classification','previous','current','period_previous','period_current','currency'],'additionalProperties':False}},
+ {'name':'explain_finance_term','description':'Offer brief definitions of supported general finance terms; no company, investment, or data retrieval claims.','annotations':READ_ONLY_ANNOTATIONS,'inputSchema':{'type':'object','properties':{'classification':{'type':'string','enum':['public','synthetic']},'term':{'type':'string','maxLength':30,'enum':list(TERMS)},**COMMON_SAFETY_PROPERTIES},'required':['classification','term'],'additionalProperties':False}}
 ]
+
 REGISTRY={'check_revenue_change':calculate,'make_finance_story_card':story,'explain_finance_term':explain}
 
 def respond(message:dict)->dict|None:

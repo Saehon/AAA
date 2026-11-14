@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "financecheck-ai-naail",
-  "version": "3.0.0",
-  "description": "Public/synthetic-data-only accounting and finance skills: SOX and audit workpapers, journal entries, reconciliation, close, statements, variance, descriptive data quality, safe SQL design and educational valuation; human review required.",
+  "version": "3.1.0",
+  "description": "Educational finance and accounting workflows with clear evidence labels, short lessons, privacy gates, and offline numerical checks. No live financial-data MCP connection.",
   "author": {
     "name": "Saeid Homayoun"
   },
@@ -23,16 +23,18 @@
   "interface": {
     "displayName": "FinanceCheck AI — NAAIL",
     "developerName": "Saeid Homayoun",
-    "category": "Productivity",
+    "category": "Finance",
     "capabilities": [
       "Read"
     ],
-    "shortDescription": "Understand public finance",
-    "longDescription": "Understand company finance in plain language, check arithmetic of public/synthetic figures and create source-labeled story cards and micro-lessons. Includes original finance/accounting skills and a separate local MCP reference implementation; does not include a connected live SEC, ERP, bank or market-data MCP server. It cannot independently certify public statements, audit SOX, offer investment advice or promise accuracy on uninspected sources. No confidential, personal or licensed-restricted uploads.",
+    "shortDescription": "Financial facts, made clear",
+    "longDescription": "Educational public/synthetic financial explanations and traceable arithmetic. No live filing or ERP retrieval, source authentication, assurance or investment advice.",
     "defaultPrompt": [
       "Explain profit versus cash flow in 30 seconds with a fictional example.",
       "Check this public company revenue claim and disclose which source you inspected.",
       "Create three accurate, source-labeled story cards about revenue growth."
-    ]
+    ],
+    "websiteURL": "https://github.com/Saehon/AAA/tree/main/financecheck-ai",
+    "supportURL": "https://github.com/Saehon/AAA/issues"
   }
 }
