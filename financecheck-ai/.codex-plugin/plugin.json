@@ -1,15 +1,38 @@
 {
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "financecheck-ai-naail",
-  "version": "2.2.0",
-  "description": "Public/synthetic-only finance and accounting education: claim verification, reconciliations, SOX draft workpapers, statements, variance, descriptive data checks, SQL syntax safety and educational valuation. Human approval required.",
-  "skills": "./skills",
+  "version": "3.0.0",
+  "description": "Public/synthetic-data-only accounting and finance skills: SOX and audit workpapers, journal entries, reconciliation, close, statements, variance, descriptive data quality, safe SQL design and educational valuation; human review required.",
+  "author": {
+    "name": "Saeid Homayoun"
+  },
+  "keywords": [
+    "financial literacy",
+    "financial statements",
+    "source verification",
+    "financial claim check",
+    "reconciliation",
+    "journal entries",
+    "variance analysis",
+    "DCF",
+    "public SEC reports",
+    "privacy by design",
+    "accounting research"
+  ],
+  "repository": "https://github.com/Saehon/IFRS-AI-Inspector",
   "interface": {
     "displayName": "FinanceCheck AI — NAAIL",
     "developerName": "Saeid Homayoun",
+    "category": "Productivity",
     "capabilities": [
       "Read"
     ],
-    "category": "Productivity",
-    "shortDescription": "Understand and check public financial claims"
+    "shortDescription": "Understand public finance",
+    "longDescription": "Understand company finance in plain language, check arithmetic of public/synthetic figures and create source-labeled story cards and micro-lessons. Includes original finance/accounting skills and a separate local MCP reference implementation; does not include a connected live SEC, ERP, bank or market-data MCP server. It cannot independently certify public statements, audit SOX, offer investment advice or promise accuracy on uninspected sources. No confidential, personal or licensed-restricted uploads.",
+    "defaultPrompt": [
+      "Explain profit versus cash flow in 30 seconds with a fictional example.",
+      "Check this public company revenue claim and disclose which source you inspected.",
+      "Create three accurate, source-labeled story cards about revenue growth."
+    ]
   }
 }

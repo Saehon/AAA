@@ -1,12 +1,37 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "financecheck-ai-naail",
-  "version": "2.2.0",
-  "description": "Public/synthetic-only finance and accounting education: claim verification, reconciliations, SOX draft workpapers, statements, variance, descriptive data checks, SQL syntax safety and educational valuation. Human approval required.",
+  "version": "3.0.0",
+  "description": "Plain-English public financial education and fictional accounting checks with evidence-first stories, safe calculations and optional micro-lessons; local MCP prototype is not deployed.",
   "author": {
     "name": "Saeid Homayoun"
   },
-  "skills": "./skills",
+  "keywords": [
+    "DCF",
+    "MCP reference",
+    "SQL read-only",
+    "accounting research",
+    "audit-support",
+    "close-management",
+    "descriptive statistics",
+    "ethical engagement",
+    "evidence cards",
+    "financial claim check",
+    "financial literacy",
+    "financial statements",
+    "financial-statements",
+    "journal entries",
+    "microlearning",
+    "optional Kensho",
+    "privacy by design",
+    "public SEC reports",
+    "reconciliation",
+    "reviewer-engineer",
+    "source verification",
+    "sox-testing",
+    "variance analysis"
+  ],
+  "repository": "https://github.com/Saehon/AAA",
   "extensions": {
     "com.openai": {
       "interface": {
@@ -16,14 +41,16 @@
         "capabilities": [
           "Read"
         ],
-        "shortDescription": "Understand and check public financial statements and accounting numbers",
-        "longDescription": "Original finance and accounting workflow skills, privacy and independent reviewer gates, synthetic arithmetic, illustrative valuation, and optional licensed-market-data templates. NO LIVE ERP, KENSHO, WAREHOUSE OR PRIVATE DRIVE CONNECTORS. No SOX/IFRS attestation or investment recommendations.",
+        "shortDescription": "Understand public finance",
+        "longDescription": "Understand company finance in plain language, check arithmetic of public/synthetic figures and create source-labeled story cards and micro-lessons. Includes original finance/accounting skills and a separate local MCP reference implementation; does not include a connected live SEC, ERP, bank or market-data MCP server. It cannot independently certify public statements, audit SOX, offer investment advice or promise accuracy on uninspected sources. No confidential, personal or licensed-restricted uploads.",
         "defaultPrompt": [
-          "Check an annual-report claim against a primary public filing with a source and fiscal period.",
-          "Explain a fictional journal entry and reconciliation.",
-          "Review a fictional discounted cash flow with uncertainty."
+          "Explain profit versus cash flow in 30 seconds with a fictional example.",
+          "Check this public company revenue claim and disclose which source you inspected.",
+          "Create three accurate, source-labeled story cards about revenue growth."
         ]
-      }
+      },
+      "onboardingSkill": "./skills/get-started/SKILL.md"
     }
-  }
+  },
+  "homepage": "https://github.com/Saehon/AAA/tree/main/financecheck-ai"
 }
