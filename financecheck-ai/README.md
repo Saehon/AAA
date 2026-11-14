@@ -1,4 +1,33 @@
-# FinanceCheck AI — NAAIL V3.1.0 (quality update)
+# FinanceCheck AI — NAAIL V3.2.0
+
+**Status:** Private ChatGPT skills plugin; public-safe GitHub source; separate local SEC XBRL reference module **NOT connected to ChatGPT or Claude**.
+
+## What is new in V3.2
+
+- Exact-concept SEC annual revenue comparisons from a fixed public API endpoint (`data.sec.gov/api/xbrl/companyfacts`), with CIK, form, accession, fiscal reporting dates, USD unit, filing cutoff, selection and restatement limitations.
+- Distinct labels for completely fictional SEC-shaped fixtures, machine-extracted official SEC XBRL and full original filing review (**the last is not implemented**).
+- SEC-network access disabled by default; when a trusted backend explicitly enables it, requests require a real SEC contact User-Agent. No arbitrary URLs and no confidential inputs.
+- Added `sec-xbrl-evidence-review` skill; now **25 finance and accounting skills**.
+- `evaluation/benchmark_200_sampling_plan.csv`: 200 **unfilled** evaluation slots; no company facts, labels, competitor results or comprehension outcomes invented.
+- `evaluation/benchmark.py`: refuses to report a publishable 200-case score without completed independent double annotation.
+- `references/CONSUMER_COMPREHENSION_PILOT_V32.md`: consented 12-person usability protocol, not executed.
+- `tests`: versioned regression testing for financial arithmetic, privacy, SEC-shaped source selection, mocked HTTP and benchmark controls.
+
+**Do not claim:** a hosted finance MCP, verified real-company reporting from this release, audited SEC source, live ERP access, completed benchmark results, scientific superiority over competitors or a ChatGPT public-directory listing.
+
+## Development commands
+
+```bash
+python -m unittest discover -s tests -v
+python -m sec_evidence.mcp_stdio
+python -m evaluation.benchmark --make-plan evaluation/benchmark_200_sampling_plan.csv
+```
+
+See `references/SEC_XBRL_PROVENANCE_V32.md` and `references/MCP_DEPLOYMENT_V32.md` before testing SEC access outside the offline suite.
+
+---
+
+## Earlier release notes — FinanceCheck AI — NAAIL V3.1.0 (quality update)
 
 **Scope:** public/synthetic-only educational finance and accounting workflows, short-form finance learning, arithmetic from supplied inputs, and local STDIO MCP reference. No live filing retrieval, client or bank access, vendor-licensed data, financial advice or audit opinions.
 
