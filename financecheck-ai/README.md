@@ -1,32 +1,34 @@
-# FinanceCheck AI — NAAIL v2.1.0 (GitHub review candidate)
+# FinanceCheck AI — NAAIL v2.2.0 · GitHub review candidate
 
-**Independent original research and educational finance plugin by Saeid Homayoun / NAAIL OpenLab.**
+**Public and synthetic financial education and numerical evidence checks.** Independent original skill definitions by Saeid Homayoun / NAAIL OpenLab. This is a **draft PR for reviewer and IP review**, not a hosted financial service, completed certification or live ERP integration.
 
-FinanceCheck AI helps readers understand public company financial statements, check submitted financial arithmetic and explicitly distinguish evidence, assumptions, contradictions and missing sources. It is designed for public/synthetic examples **only** and is **not** an audit, SOX opinion, accountant, investment adviser or company-wide ERP integration.
+## What users can ask
+- Explain a public annual report to someone who has never studied accounting
+- Check the arithmetic of an explicitly fictional journal entry, reconciliation or financial statement
+- Prepare a *fictional* SOX control-testing workpaper and sample plan (never certify a control)
+- Explain variance and the unresolved portion of a waterfall bridge
+- Review a DCF/comps/simplified LBO as an educational, assumption-dependent exercise
+- Create **non-live** templates for S&P Capital IQ company tear sheets and earnings previews
 
-## Core user questions
-- "Did this public company really improve revenue or just adjusted profit?"
-- "Explain revenue, cash flow, debt and profitability to someone who never studied accounting."
-- "Check the debit/credit arithmetic in this fictional journal entry."
-- "Which entries in this *fictional* reconciliation do not match?"
-- "Compare an illustrative DCF under different discount and terminal growth assumptions."
+## What's included in the GitHub branch
+18 original skills in `skills/`; 13 Claude commands in `commands/`; ChatGPT + Claude manifests; a privacy-first reviewer gate; release/connector/IP notices. **This branch contains skill definitions, not the executable Python engine and its 54-test suite.** The complete verified-local-arithmetic package is separately held in the creator-controlled Drive package pending institutional IP review.
 
-## Two modes
-**Beginner:** source-linked, plain-language understanding; explicitly label unverified arithmetic and evidence.
-**Professional education:** illustrative journal entries, reconciliations, variance bridges, simplified statement ties, ratio arithmetic, DCF, comps and LBO bridge.
+## Distribution
+The **private** ChatGPT plugin v2.2 was updated separately. The Claude package has been prepared, but has **not been installed into an authenticated Claude account**, and neither platform has approved a public listing. The community may inspect this draft branch without treating it as a production application.
 
-## Engineering status
-- ChatGPT private plugin V2.1.0 created and updated through Plugin Creator (not publicly listed).
-- Cross-platform source candidate and 30 local synthetic unit tests prepared independently.
-- Current GitHub branch contains **marketplace/skill distribution scaffold for review**; it is **not** the complete verified calculation engine and not a hosted service.
-- The separate complete ZIP, with local deterministic arithmetic, is available from the creator's development package pending IP/license/security sign-off.
-- No Claude marketplace installation or public approval is claimed.
+## Controls and entitlements
+No access to the creator's private Google Drive, private GitHub repositories, licensed LSEG/Audit Analytics/S&P Capital IQ, confidential client data, SOX working papers, personal banking, payroll, private IFRS content or POMELO/VERA/KIWI patent details.
 
-## Privacy and limitations
-No private GitHub/Drive accounts, personally identifiable finance records, payroll, student data, client audit workpapers, LSEG/Refinitiv/Audit Analytics datasets, protected IFRS text, POMELO/VERA/KIWI patent implementation or unpublished DARWIN data. A user declaring data "public" is not proof of lawful reuse. Never silently infer source authenticity, peer comparability, SOX certification or investment return from a numeric tie.
+No actual Snowflake, Databricks, BigQuery, Microsoft 365, Slack, NetSuite, SAP, QuickBooks or Xero integrations. Read-only gated options may be developed in a separately approved enterprise version.
 
-## Claude Code
-Use the repository marketplace `Saehon/AAA` only after the corresponding branch is incorporated and reviewed; the market entry is rooted at `.claude-plugin/marketplace.json`. Current candidate branch may require local marketplace installation. Slash commands: `/financecheck-ai-naail:claim-check`, `/financecheck-ai-naail:close-check`, `/financecheck-ai-naail:valuation-check`.
+## Engineering gates
+54 of 54 local *synthetic* Python tests passed on the private complete source; this does not establish real-world model accuracy or professional or EU regulatory compliance. For a release decision, see [release-gates.md](release-gates.md).
 
-## Review before merge
-See [release-gates.md](release-gates.md). No use of unrelated projects' intellectual property or confidential data is authorized by this README.
+## Competitor attributions
+Anthropic Finance: https://claude.com/plugins/finance
+Anthropic Financial Analysis: https://claude.com/plugins/financial-analysis
+Anthropic finance plugin skill design: https://github.com/anthropics/knowledge-work-plugins/blob/main/finance/README.md
+Kensho licensed-data skills: https://docs.kensho.com/agentskills
+OpenAI plugin schema: https://developers.openai.com/plugins/build/plugins
+
+Vendor source code has **not** been copied. Rights and licensing review is mandatory before any merge or marketplace submission.
