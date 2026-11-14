@@ -1,0 +1,111 @@
+{
+  "as_of": "2026-11-14",
+  "integrations_live": false,
+  "sources": [
+    {
+      "id": "SEC_EDGAR",
+      "name": "SEC EDGAR APIs",
+      "url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+      "purpose": "public regulatory filing + XBRL",
+      "access_policy": "free API no key; SEC fair-access and identity headers",
+      "authority_class": "regulatory primary"
+    },
+    {
+      "id": "PCAOB",
+      "name": "PCAOB standards",
+      "url": "https://pcaobus.org/oversight/standards/auditing-standards",
+      "purpose": "standard setter",
+      "access_policy": "public standards pages; regulatory applicability must be verified",
+      "authority_class": "regulatory primary"
+    },
+    {
+      "id": "IFRS",
+      "name": "IFRS Foundation preparer resources",
+      "url": "https://www.ifrs.org/preparers/",
+      "purpose": "standard setter",
+      "access_policy": "public summaries; full standards/taxonomies may require license",
+      "authority_class": "standard primary"
+    },
+    {
+      "id": "IIA",
+      "name": "IIA Global Internal Audit Standards",
+      "url": "https://www.theiia.org/en/standards/",
+      "purpose": "professional standard setter",
+      "access_policy": "public summary; copyrighted standards",
+      "authority_class": "professional primary"
+    },
+    {
+      "id": "OPENALEX",
+      "name": "OpenAlex scholarly graph",
+      "url": "https://openalex.org/",
+      "purpose": "scholarly metadata",
+      "access_policy": "free tier; API allowance and version may vary",
+      "authority_class": "metadata index"
+    },
+    {
+      "id": "CROSSREF",
+      "name": "Crossref metadata",
+      "url": "https://www.crossref.org/",
+      "purpose": "DOI bibliographic metadata",
+      "access_policy": "generally open metadata; per-work link needed",
+      "authority_class": "metadata index"
+    },
+    {
+      "id": "SSRN",
+      "name": "SSRN eLibrary",
+      "url": "https://papers.ssrn.com/",
+      "purpose": "preprint/discovery",
+      "access_policy": "full-text and reuse rights per paper; SSRN is not journal acceptance",
+      "authority_class": "preprint index"
+    },
+    {
+      "id": "GITHUB",
+      "name": "GitHub search",
+      "url": "https://github.com/search",
+      "purpose": "open code discovery",
+      "access_policy": "repository may be private or unlicensed; no execution without review",
+      "authority_class": "code platform"
+    },
+    {
+      "id": "HUGGINGFACE",
+      "name": "Hugging Face datasets",
+      "url": "https://huggingface.co/datasets",
+      "purpose": "dataset search",
+      "access_policy": "dataset card and file license check mandatory",
+      "authority_class": "data platform"
+    },
+    {
+      "id": "KAGGLE",
+      "name": "Kaggle datasets",
+      "url": "https://www.kaggle.com/datasets",
+      "purpose": "dataset search",
+      "access_policy": "free access may require account; check individual license",
+      "authority_class": "data platform"
+    },
+    {
+      "id": "ZENODO",
+      "name": "Zenodo",
+      "url": "https://zenodo.org/",
+      "purpose": "data/code archives with DOI",
+      "access_policy": "individual item permissions",
+      "authority_class": "archive"
+    },
+    {
+      "id": "HARVARD_DATAVERSE",
+      "name": "Harvard Dataverse",
+      "url": "https://dataverse.harvard.edu/",
+      "purpose": "research data archive",
+      "access_policy": "some collections restricted; dataset-level licence",
+      "authority_class": "archive"
+    },
+    {
+      "id": "GOOGLE_SCHOLAR",
+      "name": "Google Scholar",
+      "url": "https://scholar.google.com/",
+      "purpose": "citation discovery",
+      "access_policy": "manual discovery; no scraping claims",
+      "authority_class": "index"
+    }
+  ],
+  "rule": "Discovery does NOT imply access, free redistribution rights, replicated results or live service."
+}

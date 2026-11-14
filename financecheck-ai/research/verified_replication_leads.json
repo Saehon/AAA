@@ -1,0 +1,43 @@
+{
+  "as_of": "2026-11-14",
+  "scope": "verified public resource pages; article-by-article data/rights review still required",
+  "executed": false,
+  "datasets_downloaded": 0,
+  "benchmarks_reproduced": 0,
+  "leads": [
+    {
+      "title": "Estimation Precision and Robust Inference in Archival Research",
+      "authors": "Joachim Gassen and David Veenman",
+      "journal": "Journal of Accounting and Economics",
+      "year": 2026,
+      "code_url": "https://github.com/dveenman/robust",
+      "landing_page": "https://sites.google.com/site/dveenman/publications",
+      "code_license": "MIT (repository label checked)",
+      "data_status": "WRDS dependent in cited code: access not necessarily free",
+      "verified": "public GitHub README and author listing inspected; tests NOT executed",
+      "type": "FT50 publication; public code lead"
+    },
+    {
+      "title": "Playing It Safe? Managerial Preferences, Risk, and Agency Conflicts",
+      "authors": "Todd A. Gormley and David A. Matsa",
+      "journal": "Journal of Financial Economics",
+      "year": 2016,
+      "code_url": "https://github.com/d-jiao/open-source-replications",
+      "code_license": "not confirmed; separate author or third-party repo",
+      "data_status": "access and replication not checked",
+      "verified": "third-party repo README lists this paper; no code/data execution",
+      "type": "Third-party replication lead"
+    },
+    {
+      "title": "Occupational Licensing and Accountant Quality: Evidence from the 150-Hour Rule",
+      "authors": "John Manuel Barrios",
+      "journal": "Journal of Accounting Research",
+      "year": 2022,
+      "code_url": "https://johnmbarrios.com/code",
+      "code_license": "not confirmed per downloadable supplement",
+      "data_status": "author site links published journal supplement; confirm conditions",
+      "verified": "author resource listing only; no code execution",
+      "type": "FT50 publication; author replication landing page"
+    }
+  ]
+}

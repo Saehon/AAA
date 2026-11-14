@@ -1,0 +1,66 @@
+{
+  "as_of": "2026-11-14",
+  "ranking": "TEN CURATED INSTITUTIONS, NOT AN OFFICIAL TOP-10 RANKING; current rankings differ by provider and year",
+  "repositories": [
+    {
+      "university": "MIT",
+      "url": "https://dspace.mit.edu/handle/1721.1/7582",
+      "verification": "verified official thesis collection",
+      "fulltext_license_check_required": true
+    },
+    {
+      "university": "Harvard",
+      "url": "https://library.harvard.edu/services-tools/dash",
+      "verification": "verified institutional repository",
+      "fulltext_license_check_required": true
+    },
+    {
+      "university": "Cambridge",
+      "url": "https://www.repository.cam.ac.uk/",
+      "verification": "verified institutional repository",
+      "fulltext_license_check_required": true
+    },
+    {
+      "university": "Oxford",
+      "url": "https://ora.ox.ac.uk/collections/thesis",
+      "verification": "verified doctoral thesis collection",
+      "fulltext_license_check_required": true
+    },
+    {
+      "university": "Stanford",
+      "url": "https://searchworks.stanford.edu/",
+      "verification": "catalog entry, thesis holdings require individual verification",
+      "fulltext_license_check_required": true
+    },
+    {
+      "university": "UC Berkeley",
+      "url": "https://escholarship.org/uc/ucb",
+      "verification": "verified institutional repository",
+      "fulltext_license_check_required": true
+    },
+    {
+      "university": "Princeton",
+      "url": "https://dataspace.princeton.edu/",
+      "verification": "institutional repo candidate; verify each thesis record",
+      "fulltext_license_check_required": true
+    },
+    {
+      "university": "Yale",
+      "url": "https://elischolar.library.yale.edu/gsas_dissertations/",
+      "verification": "verified dissertation collection",
+      "fulltext_license_check_required": true
+    },
+    {
+      "university": "ETH Zurich",
+      "url": "https://www.research-collection.ethz.ch/",
+      "verification": "verified institutional repository thesis items",
+      "fulltext_license_check_required": true
+    },
+    {
+      "university": "Imperial College London",
+      "url": "https://spiral.imperial.ac.uk/handle/",
+      "verification": "verified institutional repository",
+      "fulltext_license_check_required": true
+    }
+  ]
+}
