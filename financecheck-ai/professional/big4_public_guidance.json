@@ -1,0 +1,39 @@
+{
+  "as_of": "2026-11-14",
+  "non_affiliation": true,
+  "rights": "Links and original descriptions only; no Big Four proprietary method or manual copied",
+  "firms": [
+    {
+      "firm": "PwC",
+      "resource": "Viewpoint",
+      "url": "https://www.pwc.com/gx/en/services/audit-assurance/viewpoint.html",
+      "access": "free browse + account + paid manuals",
+      "authority": "secondary interpretation",
+      "source_inspected": "public landing page only"
+    },
+    {
+      "firm": "EY",
+      "resource": "International GAAP 2026",
+      "url": "https://www.ey.com/en_lt/ifrs-technical-resources/international-gaap-2026-the-global-perspective-on-ifrs",
+      "access": "free to read; no redistribution permitted by this plugin",
+      "authority": "secondary interpretation",
+      "source_inspected": "public landing page only"
+    },
+    {
+      "firm": "KPMG",
+      "resource": "IFRS Accounting Toolkit",
+      "url": "https://kpmg.com/xx/en/what-we-do/services/audit/corporate-reporting-institute/ifrs/toolkit.html",
+      "access": "public guides; confirm each document license",
+      "authority": "secondary interpretation",
+      "source_inspected": "public landing page only"
+    },
+    {
+      "firm": "Deloitte",
+      "resource": "IAS Plus standards reference",
+      "url": "https://www.iasplus.com/en/standards",
+      "access": "public web guidance; respect rights",
+      "authority": "secondary interpretation",
+      "source_inspected": "public landing page only"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "as_of": "2026-11-14",
+  "method": "curated official entry points; not accredited or affiliated",
+  "bodies": [
+    {
+      "id": "ACCA",
+      "credential": "ACCA",
+      "issuer": "Association of Chartered Certified Accountants",
+      "role": "professional accounting ethics, education and technical guidance",
+      "url": "https://www.accaglobal.com/gb/en/about-us/regulation/ethics/acca-code-of-ethics-and-conduct.html",
+      "normative_scope": "members under ACCA Code; separate national reporting law and applicable IFRS/ISA",
+      "source_access": "public webpage; other licensed standards not bundled"
+    },
+    {
+      "id": "CPA_US_AICPA",
+      "credential": "US CPA",
+      "issuer": "AICPA and state accountancy boards/NASBA",
+      "role": "US CPA ethics, audit and attestation standards for applicable nonissuer contexts",
+      "url": "https://www.aicpa-cima.com/cpe-learning/publication/aicpa-professional-standards",
+      "normative_scope": "state board rules and applicable AICPA standards; SEC issuer audits use PCAOB",
+      "source_access": "some standard texts and resources require payment"
+    },
+    {
+      "id": "CIA_IIA",
+      "credential": "CIA",
+      "issuer": "The Institute of Internal Auditors",
+      "role": "internal audit governance, risk, independence and evidence",
+      "url": "https://www.theiia.org/en/standards/2024-standards/global-internal-audit-standards/",
+      "normative_scope": "2024 Global Internal Audit Standards effective 2025-01-09; not external audit opinion",
+      "source_access": "public standard page; respect rights"
+    },
+    {
+      "id": "CMA_IMA",
+      "credential": "CMA",
+      "issuer": "Institute of Management Accountants",
+      "role": "management accounting and cost/decision support ethics",
+      "url": "https://www.imaglobal.org/ethics/statement",
+      "normative_scope": "IMA member ethical conduct; not a statutory GAAP replacement",
+      "source_access": "public ethics guidance"
+    },
+    {
+      "id": "CFE_ACFE",
+      "credential": "CFE",
+      "issuer": "Association of Certified Fraud Examiners",
+      "role": "fraud risk examinations, professional conduct and evidential basis",
+      "url": "https://www.acfe.com/about-the-acfe/acfe-rules-of-conduct-and-disciplinary-procedures",
+      "normative_scope": "CFE professional code; no automatic fraud or culpability conclusion",
+      "source_access": "public codes; fraud manual may be restricted"
+    },
+    {
+      "id": "CIMA",
+      "credential": "CGMA/CIMA",
+      "issuer": "AICPA & CIMA",
+      "role": "management accounting and business decision support",
+      "url": "https://www.aicpa-cima.com/",
+      "normative_scope": "professional guidance separate from jurisdictional reporting standards",
+      "source_access": "mixed free/member"
+    },
+    {
+      "id": "ICAEW",
+      "credential": "ACA",
+      "issuer": "Institute of Chartered Accountants in England and Wales",
+      "role": "UK accounting ethics and technical practice",
+      "url": "https://www.icaew.com/technical/ethics/icaew-code-of-ethics",
+      "normative_scope": "member ethics and UK regulation; check effective edition",
+      "source_access": "mixed free/member"
+    },
+    {
+      "id": "IFAC",
+      "credential": "international profession umbrella",
+      "issuer": "International Federation of Accountants",
+      "role": "professional education, governance, resources and standard-setter links",
+      "url": "https://www.ifac.org/knowledge-gateway",
+      "normative_scope": "not a substitute for legal adoption or pronouncements of independent boards",
+      "source_access": "public portal"
+    },
+    {
+      "id": "IESBA",
+      "credential": "ethics standard setter",
+      "issuer": "International Ethics Standards Board for Accountants",
+      "role": "international ethics and independence frameworks",
+      "url": "https://www.ethicsboard.org/",
+      "normative_scope": "apply relevant edition, jurisdictional adoption and audit vs assurance engagement",
+      "source_access": "license terms to inspect"
+    },
+    {
+      "id": "ISACA",
+      "credential": "CISA/CRISC",
+      "issuer": "ISACA",
+      "role": "information systems audit, assurance and governance",
+      "url": "https://www.isaca.org/resources",
+      "normative_scope": "professional frameworks; not IFRS/PCAOB replacement",
+      "source_access": "mixed free/member"
+    },
+    {
+      "id": "CPA_CANADA",
+      "credential": "Canadian CPA",
+      "issuer": "CPA Canada and provincial bodies",
+      "role": "Canadian accounting and audit professional guidance",
+      "url": "https://www.cpacanada.ca/",
+      "normative_scope": "Canadian standards/legislation and provincial rules",
+      "source_access": "mixed free/member"
+    },
+    {
+      "id": "CA_ANZ",
+      "credential": "CA",
+      "issuer": "Chartered Accountants Australia and New Zealand",
+      "role": "professional accounting, ethics, tax and assurance resources",
+      "url": "https://www.charteredaccountantsanz.com/",
+      "normative_scope": "Australia/New Zealand jurisdiction-specific guidance",
+      "source_access": "mixed free/member"
+    }
+  ],
+  "warning": "Professional credentials are not authority to issue audit opinions, certifications or legal compliance assessments; no proprietary full-text standards bundled."
+}

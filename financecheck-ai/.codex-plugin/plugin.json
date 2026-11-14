@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "financecheck-ai-naail",
-  "version": "3.3.0",
-  "description": "IFRS/XBRL, ISSB sustainability, ESG and double-materiality research; ISAE 3410→ISSA 5000 and PCAOB audit guidance; FT50/AJG4 literature checks. Educational only, no hosted validation.",
+  "version": "3.4.0",
+  "description": "IFRS/XBRL, ISSB/ESRS, PCAOB and professional accounting guidance with open research replication workflows; skills and offline research checkers only.",
   "author": {
     "name": "Saeid Homayoun"
   },
@@ -45,8 +45,8 @@
     "capabilities": [
       "Read"
     ],
-    "shortDescription": "IFRS, XBRL, ISSB and audit research",
-    "longDescription": "Research and educational ISSB/ESRS double materiality, IAASB sustainability assurance transition, PCAOB financial audit and FT50/AJG4 literature workflows. No hosted MCP, licensed taxonomy validation or professional opinion.",
+    "shortDescription": "IFRS, audit, sustainability & research",
+    "longDescription": "Research and educational accounting, XBRL/ISSB/ESRS, PCAOB and professional-body guidance. Includes original skills and offline registry-based research and verification controls for public EDGAR, scholarly theses and open replication repositories; no live GitHub/Kaggle/HF/SSRN/SEC MCP, external Co-Scientist/AlphaEvolve access or licensed professional manuals are included. No professional certification, audit opinion or guaranteed replication result.",
     "defaultPrompt": [
       "Compare ISSB and ESRS materiality without conflation.",
       "Route historical ISAE 3410 versus ISSA 5000 by engagement dates and jurisdiction.",

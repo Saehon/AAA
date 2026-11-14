@@ -1,3 +1,7 @@
+# NAAIL Reporting Inspector V3.4.0
+
+**Professional-body and open research extension.** Educational, public/synthetic research use only; 46 skills. New: ACCA/CPA/CIA/CMA/CFE/CIMA/ICAEW ethics routing; Big Four public guidance; open code/data metadata and licences; curated thesis repositories; offline research-reviewer tasks. **No external publisher standards licensed or Google Co-Scientist/AlphaEvolve service connected; no live market/ERP/SEC/SSRN/Kaggle/HF MCP.** No official endorsement or guaranteed academic replication.
+
 # NAAIL Reporting Inspector — V3.3.0
 
 **IFRS · XBRL · ISSB Sustainability · ESG · ESRS Double Materiality · Assurance · PCAOB · FT50/AJG4 Research**
@@ -87,3 +91,5 @@ python -m unittest discover -s tests -p 'test_*.py' -v
 ChatGPT personal private plugin is a skills-only installation, **not** a deployed MCP app. Claude skill/command package is provided for installation by the user, not installed remotely. The local MCP reference has never been authenticated with either consumer runtime.
 
 See `references/MASTER_ENGINEERING_PROMPT_V3.md`, `references/MCP_DEPLOYMENT_READINESS.md`, `references/REVIEWER_SCORECARD_V3.md`.
+
+Example inspectable public research leads (not executed): `research/verified_replication_leads.json`. The JAE archival research paper has public MIT-labelled GitHub code but includes WRDS data dependencies; free code does not make the research inputs free.

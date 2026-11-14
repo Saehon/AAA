@@ -1,7 +1,7 @@
 {
   "name": "financecheck-ai-naail",
-  "description": "IFRS/XBRL, ISSB sustainability, ESG and double-materiality research; ISAE 3410→ISSA 5000 and PCAOB audit guidance; FT50/AJG4 literature checks. Educational only, no hosted validation.",
-  "version": "3.3.0",
+  "description": "IFRS/XBRL, ISSB/ESRS, PCAOB and professional accounting guidance with open research replication workflows; skills and offline research checkers only.",
+  "version": "3.4.0",
   "author": {
     "name": "Saeid Homayoun"
   },

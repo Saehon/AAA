@@ -1,3 +1,8 @@
+## V3.4.0 — professional bodies and open scientific research discovery
+- 11 new skills; 46 total. Official source registry, public Big Four guide links, open research catalogs, ten unranked university thesis sources and fail-closed local routing tests.
+- Co-Scientist and AlphaEvolve used as design references, not actual third-party service integrations.
+- No proprietary standards or evidence of real code/data replication bundled.
+
 ## V3.3.0 — Sustainability, assurance and FT50/AJG4 research expansion
 - Ten original skills, six Claude command files, 35 total skills.
 - Issued/current policy gates: ISSB S1/S2, revised 2026 ESRS and double materiality, 2025 IFRS S2 amendments applicable 2027, IAASB ISAE 3410 to ISSA 5000 transition, PCAOB AS audit track.
