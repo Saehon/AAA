@@ -36,7 +36,7 @@ class SustainabilityQuality(unittest.TestCase):
  def test_26_no_certification_claim(self):
   for s in json.loads((ROOT/'standards/authority_registry.json').read_text())['standards']:self.assertIn('verification',s)
  def test_27_s2_jurisdiction(self):self.assertFalse(reporting_version('2027-01-01',jurisdiction='EU',framework='ISSB_S1_S2')['mandatory_applicability_verified'])
- def test_28_more_than_30_skills(self):self.assertEqual(len(list((ROOT/'skills').glob('*/SKILL.md'))),35)
+ def test_28_more_than_30_skills(self):self.assertGreaterEqual(len(list((ROOT/'skills').glob('*/SKILL.md'))),35)  # V3.3 baseline; V3.4 tests assert 46
  def test_29_standards_text_not_bundled(self):self.assertFalse((ROOT/'standards/IFRS_S1_FULL_STANDARD.pdf').exists())
  def test_30_year_conditional_human_review(self):self.assertTrue(assurance_transition('2026-01-01',subject='GHG')['review_required'])
 if __name__=='__main__':unittest.main()
