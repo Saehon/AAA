@@ -1,0 +1,15 @@
+{
+  "name": "naail-plugins",
+  "plugins": [
+    {
+      "name": "financecheck-ai-naail",
+      "source": {
+        "path": "./financecheck-ai"
+      },
+      "interface": {
+        "displayName": "FinanceCheck AI — NAAIL",
+        "description": "Explain and check public-company financial data with transparent sources and limitations"
+      }
+    }
+  ]
+}
