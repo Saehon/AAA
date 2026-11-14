@@ -1,0 +1,15 @@
+{
+  "name": "financecheck-ai-naail",
+  "version": "2.1.0",
+  "description": "Public/synthetic data only; finance literacy and evidence review; not a professional opinion",
+  "skills": "./skills",
+  "interface": {
+    "displayName": "FinanceCheck AI — NAAIL",
+    "developerName": "Saeid Homayoun",
+    "capabilities": [
+      "Read"
+    ],
+    "category": "Productivity",
+    "shortDescription": "Understand and check public financial claims"
+  }
+}
