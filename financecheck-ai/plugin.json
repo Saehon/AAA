@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "financecheck-ai-naail",
-  "version": "3.3.0",
-  "description": "IFRS/XBRL, ISSB sustainability, ESG and double-materiality research; ISAE 3410→ISSA 5000 and PCAOB audit guidance; FT50/AJG4 literature checks. Educational only, no hosted validation.",
+  "version": "3.4.0",
+  "description": "IFRS/XBRL, ISSB/ESRS, PCAOB and professional accounting guidance with open research replication workflows; skills and offline research checkers only.",
   "author": {
     "name": "Saeid Homayoun"
   },
@@ -32,7 +32,24 @@
     "ISSA 5000",
     "PCAOB",
     "FT50",
-    "AJG4"
+    "AJG4",
+    "ACCA",
+    "CPA",
+    "CIA",
+    "CMA",
+    "CFE",
+    "AICPA",
+    "IIA",
+    "IMA",
+    "ACFE",
+    "Big Four",
+    "open replication",
+    "GitHub",
+    "Kaggle",
+    "Hugging Face",
+    "SSRN",
+    "Co-Scientist-inspired",
+    "AlphaEvolve-inspired"
   ],
   "repository": "https://github.com/Saehon/AAA",
   "extensions": {
@@ -44,19 +61,19 @@
         "capabilities": [
           "Read"
         ],
-        "shortDescription": "IFRS, XBRL, ISSB and audit research",
-        "longDescription": "Research-oriented IFRS/XBRL, ISSB IFRS S1/S2, ESG, European ESRS double materiality, IAASB ISAE 3410 to ISSA 5000 transition, PCAOB audit evidence, and FT50/AJG4 scholarly literature review. Includes source-labeled instructional skills and a separately runnable, offline standards routing aid. No licensed taxonomy validator, formal conformity testing, hosted SEC/ISSB/ESRS MCP, assurance opinion, independently assessed materiality conclusion or automatically retrieved academic papers.",
+        "shortDescription": "IFRS, audit, sustainability & research",
+        "longDescription": "Research and educational accounting, XBRL/ISSB/ESRS, PCAOB and professional-body guidance. Includes original skills and offline registry-based research and verification controls for public EDGAR, scholarly theses and open replication repositories; no live GitHub/Kaggle/HF/SSRN/SEC MCP, external Co-Scientist/AlphaEvolve access or licensed professional manuals are included. No professional certification, audit opinion or guaranteed replication result.",
         "defaultPrompt": [
-          "Compare ISSB IFRS S1/S2 investor materiality with ESRS double materiality for a fictional company, citing sources.",
-          "Explain ISAE 3410 versus ISSA 5000 for a 2026/2027 greenhouse-gas assurance engagement, including effective dates.",
-          "Review PCAOB CAM/ICFR disclosure research and find verified FT50 or AJG4 papers with DOI and available replication data."
+          "Compare ACCA, AICPA CPA, IIA CIA, IMA CMA and ACFE CFE guidance for a fictional case, citing the actual official source.",
+          "Compare public PwC, EY, KPMG and Deloitte IFRS guidance with the governing standard for the requested year.",
+          "Find FT50/AJG4 accounting studies and identify any actually available open replication code, dataset licences and linked theses."
         ],
         "websiteURL": "https://github.com/Saehon/AAA/tree/main/financecheck-ai",
         "supportURL": "https://github.com/Saehon/AAA/issues"
       },
       "onboardingSkill": "./skills/get-started/SKILL.md",
       "publication": {
-        "release_notes": "V3.3 adds ten research skills covering ISSB, GHG, ESG, ESRS double materiality, ISSA 5000 transition, PCAOB and FT50/AJG4; 50-title FT50 2026 index and selected AJG ratings. No live standards validation or academic-paper corpus."
+        "release_notes": "V3.4 adds 11 professional bodies and open research skills, offline regulatory routing and multi-agent reviewer planning; no new remote integrations."
       }
     }
   },
