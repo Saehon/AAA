@@ -1,7 +1,7 @@
 {
   "name": "financecheck-ai-naail",
-  "description": "NAAIL Reporting Inspector — educational IFRS® reporting and XBRL™ evidence review; not certified, no live connected validator.",
-  "version": "3.2.1",
+  "description": "IFRS/XBRL, ISSB sustainability, ESG and double-materiality research; ISAE 3410→ISSA 5000 and PCAOB audit guidance; FT50/AJG4 literature checks. Educational only, no hosted validation.",
+  "version": "3.3.0",
   "author": {
     "name": "Saeid Homayoun"
   },
@@ -15,7 +15,19 @@
     "reconciliation",
     "claim-checking",
     "audit evidence",
-    "public filings"
+    "public filings",
+    "ISSB",
+    "IFRS S1",
+    "IFRS S2",
+    "sustainability",
+    "ESG",
+    "ESRS",
+    "double materiality",
+    "ISAE 3410",
+    "ISSA 5000",
+    "PCAOB",
+    "FT50",
+    "AJG4"
   ],
   "license": "SEE-LICENSE-NOTICE"
 }

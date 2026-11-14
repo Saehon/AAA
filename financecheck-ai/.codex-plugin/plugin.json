@@ -1,12 +1,18 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "financecheck-ai-naail",
-  "version": "3.2.1",
-  "description": "IFRS® financial reporting and XBRL™ evidence review research preview; no live validation or endorsement.",
+  "version": "3.3.0",
+  "description": "IFRS/XBRL, ISSB sustainability, ESG and double-materiality research; ISAE 3410→ISSA 5000 and PCAOB audit guidance; FT50/AJG4 literature checks. Educational only, no hosted validation.",
   "author": {
     "name": "Saeid Homayoun"
   },
   "keywords": [
+    "IFRS financial reporting",
+    "XBRL",
+    "iXBRL",
+    "ESEF",
+    "financial evidence",
+    "accounting education",
     "financial literacy",
     "financial statements",
     "source verification",
@@ -17,7 +23,19 @@
     "DCF",
     "public SEC reports",
     "privacy by design",
-    "accounting research"
+    "accounting research",
+    "ISSB",
+    "IFRS S1",
+    "IFRS S2",
+    "sustainability",
+    "ESG",
+    "ESRS",
+    "double materiality",
+    "ISAE 3410",
+    "ISSA 5000",
+    "PCAOB",
+    "FT50",
+    "AJG4"
   ],
   "repository": "https://github.com/Saehon/AAA",
   "interface": {
@@ -27,12 +45,12 @@
     "capabilities": [
       "Read"
     ],
-    "shortDescription": "Understand IFRS® and XBRL™ evidence",
-    "longDescription": "Educational research preview for IFRS® accounting and XBRL™/iXBRL financial reporting. Current working capabilities are public/synthetic accounting education, deterministic arithmetic and a separate opt-in local SEC US-GAAP XBRL annual-revenue evidence reference. It does not execute IFRS taxonomy validation, ESEF checks or IFRS 18 judgments; no hosted MCP is connected. Not approved or certified by the IFRS Foundation or XBRL International; no audit assurance or investment advice.",
+    "shortDescription": "IFRS, XBRL, ISSB and audit research",
+    "longDescription": "Research and educational ISSB/ESRS double materiality, IAASB sustainability assurance transition, PCAOB financial audit and FT50/AJG4 literature workflows. No hosted MCP, licensed taxonomy validation or professional opinion.",
     "defaultPrompt": [
-      "Explain how IFRS® financial reporting and XBRL™ tagging relate without claiming formal validation.",
-      "Outline an ESEF/iXBRL review checklist; distinguish proposed checks from executed tests.",
-      "Calculate fictional annual revenue growth and label the evidence limitations."
+      "Compare ISSB and ESRS materiality without conflation.",
+      "Route historical ISAE 3410 versus ISSA 5000 by engagement dates and jurisdiction.",
+      "Find FT50/AJG4 sustainability audit literature with DOI and replication links."
     ],
     "websiteURL": "https://github.com/Saehon/AAA/tree/main/financecheck-ai",
     "supportURL": "https://github.com/Saehon/AAA/issues"
