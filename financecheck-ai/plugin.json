@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "financecheck-ai-naail",
-  "version": "2.1.0",
-  "description": "Public/synthetic financial literacy, reconciliation, claim arithmetic and educational valuation; private data prohibited and review mandatory",
+  "version": "2.2.0",
+  "description": "Public/synthetic-only finance and accounting education: claim verification, reconciliations, SOX draft workpapers, statements, variance, descriptive data checks, SQL syntax safety and educational valuation. Human approval required.",
   "author": {
     "name": "Saeid Homayoun"
   },
@@ -16,8 +16,8 @@
         "capabilities": [
           "Read"
         ],
-        "shortDescription": "Understand and check public company financial numbers",
-        "longDescription": "Original educational finance workflows, no market data connection or confidential inputs. The public GitHub branch is a release candidate. Source claims are not automatically authenticated.",
+        "shortDescription": "Understand and check public financial statements and accounting numbers",
+        "longDescription": "Original finance and accounting workflow skills, privacy and independent reviewer gates, synthetic arithmetic, illustrative valuation, and optional licensed-market-data templates. NO LIVE ERP, KENSHO, WAREHOUSE OR PRIVATE DRIVE CONNECTORS. No SOX/IFRS attestation or investment recommendations.",
         "defaultPrompt": [
           "Check an annual-report claim against a primary public filing with a source and fiscal period.",
           "Explain a fictional journal entry and reconciliation.",
