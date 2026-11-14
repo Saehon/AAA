@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "financecheck-ai-naail",
-  "version": "3.2.0",
-  "description": "Educational finance with source-graded SEC XBRL verification workflow, clear evidence caveats and deterministic accounting tests. Public filing retrieval is optional local backend only and not connected to ChatGPT.",
+  "version": "3.2.1",
+  "description": "IFRS® reporting and XBRL™ evidence-review research preview; no IFRS validator, certification, or connected hosted MCP.",
   "author": {
     "name": "Saeid Homayoun"
   },
@@ -21,25 +21,25 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "FinanceCheck AI — NAAIL",
+        "displayName": "NAAIL Reporting Inspector",
         "developerName": "Saeid Homayoun",
         "category": "Finance",
         "capabilities": [
           "Read"
         ],
-        "shortDescription": "Understand finance. Check the source.",
-        "longDescription": "Learn financial statements and accounting with transparent arithmetic, source-graded SEC XBRL workflow instructions, fictional examples and concise story cards. A local reference module can evaluate extracted SEC public facts when separately connected and explicitly enabled; this plugin has NO LIVE SEC/ERP/BANK/market-data connection and has NOT authenticated company reports here. No audit assurance, investment advice or confidential uploads.",
+        "shortDescription": "Understand IFRS® and XBRL™ evidence",
+        "longDescription": "Educational research preview for IFRS® accounting and XBRL™/iXBRL financial reporting. Current working capabilities are public/synthetic accounting education, deterministic arithmetic and a separate opt-in local SEC US-GAAP XBRL annual-revenue evidence reference. It does not execute IFRS taxonomy validation, ESEF checks or IFRS 18 judgments; no hosted MCP is connected. Not approved or certified by the IFRS Foundation or XBRL International; no audit assurance or investment advice.",
         "defaultPrompt": [
-          "Explain why profit differs from cash flow using fictional figures.",
-          "Help verify a public company annual revenue claim: distinguish inspected SEC facts from my submitted numbers.",
-          "Show a three-card explanation of revenue growth and what was not independently checked."
+          "Explain how IFRS® financial reporting and XBRL™ tagging relate without claiming formal validation.",
+          "Outline an ESEF/iXBRL review checklist; distinguish proposed checks from executed tests.",
+          "Calculate fictional annual revenue growth and label the evidence limitations."
         ],
         "websiteURL": "https://github.com/Saehon/AAA/tree/main/financecheck-ai",
         "supportURL": "https://github.com/Saehon/AAA/issues"
       },
       "onboardingSkill": "./skills/get-started/SKILL.md",
       "publication": {
-        "release_notes": "V3.2 adds source-graded SEC XBRL review skills, a disabled-by-default local SEC reference tool, benchmark/evidence protocol and independent regression tests. No live MCP server is connected."
+        "release_notes": "3.2.1 changes the consumer display name to NAAIL Reporting Inspector, with IFRS/XBRL as a descriptive focus; no new IFRS validator or live MCP."
       }
     }
   },
