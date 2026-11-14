@@ -1,0 +1,9 @@
+# MCP: Reference implementation, NOT connected service
+
+OpenAI separates a reusable **skill** from an **MCP tool**. An MCP server requires a running endpoint and a connected client. The local stdio JSON-RPC demonstration at `mcp_lab/server.py` supports `initialize`, `tools/list`, and `tools/call`, and runs with no third-party dependencies. It makes **no** network call, SEC retrieval, cloud storage, personal-account integration or logging of user records. The demo has not been tested as a hosted HTTPS service or in an authenticated Claude runtime.
+
+**Do not put a fictional remote URL in `mcp.json`.** The private ChatGPT v3 plugin is explicitly **skills-only**. Public OpenAI submission with a hosted MCP tool must be designed as a separate submission/identity where needed, with real HTTPS endpoint, domain verification, authentication and access-control review. OpenAI currently does not support adding an MCP server later to an already skills-only public submission: see https://developers.openai.com/plugins/deploy/submission.
+
+**Local CLI smoke test:** `python mcp_lab/server.py` reads line-delimited JSON-RPC 2.0 messages on stdin and returns responses on stdout. For a production deployment, replace demo-only transport and static bounds with official MCP SDK, structured tools, documented schemas, rate limits, authentication, HTTPS, audit logging with approved retention, testing for SSRF/prompt injection and a permitted original public filing retrieval connector.
+
+**Tool names**: `check_revenue_change` (bounded Decimal arithmetic), `make_finance_story_card` (fictional/public provided facts clearly marked unverified), `explain_finance_term` (original educational glossary). Tool outputs are not assurances or investment advice. All source claims are UNVERIFIED until primary-source retrieval is independently executed by an authenticated, approved connector.
