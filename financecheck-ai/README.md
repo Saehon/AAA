@@ -11,10 +11,10 @@
 - Create **non-live** templates for S&P Capital IQ company tear sheets and earnings previews
 
 ## What's included in the GitHub branch
-18 original skills in `skills/`; 13 Claude commands in `commands/`; ChatGPT + Claude manifests; a privacy-first reviewer gate; release/connector/IP notices. **This branch contains skill definitions, not the executable Python engine and its 54-test suite.** The complete verified-local-arithmetic package is separately held in the creator-controlled Drive package pending institutional IP review.
+18 original skills in `skills/`; 13 Claude commands in `commands/`; ChatGPT + Claude manifests; a privacy-first reviewer gate; release/connector/IP notices. **This GitHub distribution contains skill definitions, not the executable Python engine and its 54-test suite.** The complete verified-local-arithmetic package is separately held in the creator-controlled Drive package pending institutional IP review.
 
 ## Distribution
-The **private** ChatGPT plugin v2.2 was updated separately. The Claude package has been prepared, but has **not been installed into an authenticated Claude account**, and neither platform has approved a public listing. The community may inspect this draft branch without treating it as a production application.
+The **private** ChatGPT plugin v2.2 was updated separately. The Claude package has been prepared, but has **not been installed into an authenticated Claude account**, and neither platform has approved a public listing. The public repository makes the skills and documentation accessible, but neither provider has approved this project for public marketplace listing.
 
 ## Controls and entitlements
 No access to the creator's private Google Drive, private GitHub repositories, licensed LSEG/Audit Analytics/S&P Capital IQ, confidential client data, SOX working papers, personal banking, payroll, private IFRS content or POMELO/VERA/KIWI patent details.
