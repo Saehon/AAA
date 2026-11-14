@@ -1,0 +1,17 @@
+{
+  "name": "financecheck-ai-naail",
+  "version": "2.1.0",
+  "description": "Public/synthetic-data-first financial claim checking, accounting arithmetic and illustrative valuation review; human review is mandatory",
+  "author": {
+    "name": "Saeid Homayoun"
+  },
+  "repository": "https://github.com/Saehon/AAA",
+  "license": "SEE-NOTICE",
+  "keywords": [
+    "finance",
+    "financial statements",
+    "reconciliation",
+    "valuation",
+    "source verification"
+  ]
+}
