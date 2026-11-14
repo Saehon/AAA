@@ -1,7 +1,14 @@
-## 3.2.1 — NAAIL Reporting Inspector naming and scope update
-- New display name **NAAIL Reporting Inspector**; descriptive IFRS® & XBRL™ subtitle.
-- Internal `financecheck-ai-naail` ID retained for backwards compatibility.
-- No claims of IFRS Foundation/XBRL International affiliation, certification, functioning IFRS taxonomy validation or hosted MCP service.
+## V3.3.0 — Sustainability, assurance and FT50/AJG4 research expansion
+- Ten original skills, six Claude command files, 35 total skills.
+- Issued/current policy gates: ISSB S1/S2, revised 2026 ESRS and double materiality, 2025 IFRS S2 amendments applicable 2027, IAASB ISAE 3410 to ISSA 5000 transition, PCAOB AS audit track.
+- FT50 2026 full 50-title **journal index**, selected AJG2024 grade 4/4* subset. No research paper or copyrighted standards text bundled.
+- Offline date-based routing/evidence triage with human-review mandatory, no automated regulatory conformity.
+- Versioned synthetic regression tests; no hosted MCP, independent scientific study, licensed full standards dataset or publisher endorsement.
+
+## 3.2.1 — IFRS and XBRL descriptive rebrand
+- Updated consumer display name to NAAIL Reporting Inspector, with IFRS® and XBRL™ review in the descriptive subtitle.
+- Preserved the stable internal package slug and private ChatGPT plugin identity.
+- Added trademark and implementation-scope disclaimers; no new IFRS/iXBRL validator or hosted MCP is represented as working.
 
 # Change Log
 

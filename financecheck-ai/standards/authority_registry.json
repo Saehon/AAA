@@ -1,0 +1,63 @@
+{
+  "as_of": "2026-11-14",
+  "citation_policy": "consult authoritative sources for the reporting date; this snapshot is not a license to reproduce copyrighted IFRS/IAASB text",
+  "standards": [
+    {
+      "id": "ISSB_S1",
+      "name": "IFRS S1 sustainability-related financial disclosures",
+      "governing_issuer": "ISSB / IFRS Foundation",
+      "reference": "https://www.ifrs.org/sustainability/knowledge-hub/introduction-to-issb-and-ifrs-sustainability-disclosure-standards/",
+      "scope": "investor-focused sustainability-related risks and opportunities",
+      "status_as_of_2026_11_14": "issued; adoption varies by jurisdiction",
+      "first_effective": "2024-01-01",
+      "verification": "educational review only"
+    },
+    {
+      "id": "ISSB_S2",
+      "name": "IFRS S2 climate disclosures",
+      "governing_issuer": "ISSB / IFRS Foundation",
+      "reference": "https://www.ifrs.org/sustainability/knowledge-hub/introduction-to-issb-and-ifrs-sustainability-disclosure-standards/",
+      "scope": "climate risks and opportunities, including GHG disclosures",
+      "status_as_of_2026_11_14": "issued; targeted GHG amendments applicable from 2027-01-01 unless early applied",
+      "amendment_reference": "https://www.ifrs.org/news-and-events/news/2025/12/issb-issues-targeted-amendments-ifrs-s2/",
+      "first_effective": "2024-01-01",
+      "verification": "educational review only"
+    },
+    {
+      "id": "EU_ESRS",
+      "name": "European Sustainability Reporting Standards / 2026 revised ESRS",
+      "governing_issuer": "EU Commission; EFRAG technical guidance",
+      "reference": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=oj:L_202601563",
+      "scope": "double materiality, ESRS disclosures",
+      "status_as_of_2026_11_14": "2026 transition permits applicable alternatives; revised ESRS 2027 effective",
+      "verification": "version and jurisdiction-specific review, not formal EU compliance"
+    },
+    {
+      "id": "ISAE_3410",
+      "name": "ISAE 3410 greenhouse gas statement assurance",
+      "governing_issuer": "IAASB",
+      "reference": "https://www.iaasb.org/news-events/2025-05/iaasb-announces-withdrawal-isae-3410-assurance-engagements-greenhouse-gas-statements",
+      "scope": "historical GHG assurance",
+      "status_as_of_2026_11_14": "withdrawal approved effective 2026-12-15; apply jurisdiction and reporting-period conditions",
+      "verification": "historical / transition routing only"
+    },
+    {
+      "id": "ISSA_5000",
+      "name": "ISSA 5000 sustainability assurance",
+      "governing_issuer": "IAASB",
+      "reference": "https://www.iaasb.org/focus-areas/understanding-international-standard-sustainability-assurance-5000",
+      "scope": "all types of sustainability information assurance",
+      "status_as_of_2026_11_14": "international effective periods beginning on/after 2026-12-15; jurisdiction adoption varies",
+      "verification": "not an assurance report"
+    },
+    {
+      "id": "PCAOB",
+      "name": "PCAOB AS 1105, AS 1215, AS 2201, AS 3101",
+      "governing_issuer": "PCAOB",
+      "reference": "https://pcaobus.org/oversight/standards/auditing-standards/details/AS1105",
+      "scope": "US issuer financial statement and ICFR audits; CAMs",
+      "status_as_of_2026_11_14": "audit standards; cannot substitute for ISSA 5000 sustainability assurance",
+      "verification": "no audit opinion or PCAOB inspection result"
+    }
+  ]
+}

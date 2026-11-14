@@ -1,0 +1,18 @@
+{
+  "edition": "Academic Journal Guide 2024",
+  "scope": "SELECTED accounting/finance journals; NOT the complete AJG 4/4* list",
+  "source": "https://www.kean.edu/media/accounting-and-finance-artp-document",
+  "ratings": {
+    "The Accounting Review": "4*",
+    "Accounting, Organizations and Society": "4*",
+    "Journal of Accounting and Economics": "4*",
+    "Journal of Accounting Research": "4*",
+    "Contemporary Accounting Research": "4",
+    "Review of Accounting Studies": "4",
+    "Journal of Finance": "4*",
+    "Journal of Financial Economics": "4*",
+    "Review of Financial Studies": "4*",
+    "Journal of Corporate Finance": "4"
+  },
+  "warning": "Year/version specific; independent official Chartered ABS guide should control final journal eligibility"
+}

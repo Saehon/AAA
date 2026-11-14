@@ -1,8 +1,32 @@
+# NAAIL Reporting Inspector — V3.3.0
+
+**IFRS · XBRL · ISSB Sustainability · ESG · ESRS Double Materiality · Assurance · PCAOB · FT50/AJG4 Research**
+
+Adds 10 original research-and-review skills (35 skills total), six Claude command files, a dated standards authority registry, a 50-title FT50 2026 journal roster, a **selected only** AJG 2024 accounting/finance grade-4 subset, a reproducibility template, and a separate deterministic, local non-authoritative standards router. The prior SEC US-GAAP XBRL evidence module and all existing finance/audit capabilities are preserved.
+
+**Not an assurance firm, regulator, IFRS-certified tool, ESEF validator, official standards distributor, licensed publisher research corpus or connected live MCP service.** No claim of verification until actual sources inspected and checks performed.
+
+## Run local tests
+`python -m unittest discover -s tests -q`
+
+## New references
+- `references/ISSB_ESG_ASSURANCE_RESEARCH_V330.md`
+- `references/MASTER_ENGINEERING_PROMPT_V330.md`
+- `standards/authority_registry.json`
+- `research/ft50_2026_registry.json`
+- `research/ajg2024_verified_accounting_finance_subset.json` (partial, not exhaustive)
+
+See original V3.2 documents below for earlier capabilities.
+
+---
+
 # NAAIL Reporting Inspector
 
-**IFRS® & XBRL™ Financial Reporting Review — Research Preview**
+**IFRS® and XBRL™ financial reporting evidence review — research preview**
 
-Formerly FinanceCheck AI — NAAIL. This 3.2.1 release changes the user-facing name, not the installed plugin's internal identifier or its existing capabilities. It is **not an IFRS taxonomy validator, ESEF conformance engine, audit service, or hosted SEC/IFRS MCP connection**. See [branding and scope](references/BRAND_IFRS_XBRL_SCOPE_V321.md) before public marketing.
+*Formerly FinanceCheck AI — NAAIL. This is a naming and scope clarification release (V3.2.1), not an IFRS or ESEF validator.*
+
+See `references/BRAND_IFRS_XBRL_SCOPE_V321.md` for ownership, trademark and operational limitations.
 
 ---
 
