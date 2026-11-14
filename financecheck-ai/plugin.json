@@ -1,0 +1,29 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "financecheck-ai-naail",
+  "version": "2.1.0",
+  "description": "Public/synthetic financial literacy, reconciliation, claim arithmetic and educational valuation; private data prohibited and review mandatory",
+  "author": {
+    "name": "Saeid Homayoun"
+  },
+  "skills": "./skills",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "FinanceCheck AI — NAAIL",
+        "developerName": "Saeid Homayoun",
+        "category": "Productivity",
+        "capabilities": [
+          "Read"
+        ],
+        "shortDescription": "Understand and check public company financial numbers",
+        "longDescription": "Original educational finance workflows, no market data connection or confidential inputs. The public GitHub branch is a release candidate. Source claims are not automatically authenticated.",
+        "defaultPrompt": [
+          "Check an annual-report claim against a primary public filing with a source and fiscal period.",
+          "Explain a fictional journal entry and reconciliation.",
+          "Review a fictional discounted cash flow with uncertainty."
+        ]
+      }
+    }
+  }
+}
