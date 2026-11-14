@@ -1,7 +1,7 @@
 {
   "name": "financecheck-ai-naail",
-  "description": "Educational finance with source-graded SEC XBRL verification workflow, clear evidence caveats and deterministic accounting tests. Public filing retrieval is optional local backend only and not connected to ChatGPT.",
-  "version": "3.2.0",
+  "description": "NAAIL Reporting Inspector — educational IFRS® reporting and XBRL™ evidence review; not certified, no live connected validator.",
+  "version": "3.2.1",
   "author": {
     "name": "Saeid Homayoun"
   },
