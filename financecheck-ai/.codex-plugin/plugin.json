@@ -1,7 +1,7 @@
 {
   "name": "financecheck-ai-naail",
-  "version": "2.1.0",
-  "description": "Public/synthetic data only; finance literacy and evidence review; not a professional opinion",
+  "version": "2.2.0",
+  "description": "Public/synthetic-only finance and accounting education: claim verification, reconciliations, SOX draft workpapers, statements, variance, descriptive data checks, SQL syntax safety and educational valuation. Human approval required.",
   "skills": "./skills",
   "interface": {
     "displayName": "FinanceCheck AI — NAAIL",
